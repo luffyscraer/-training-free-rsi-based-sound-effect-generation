@@ -21,7 +21,8 @@ function card(c) {
   head.append(title,el('div','meta',`${c.language === 'zh' ? '中文' : 'English'} · ${seconds(c.duration)} s · ${c.events.length} events`));
   const body = el('div','demo-body'), text = el('div'); const story = el('p','story',c.text); story.lang = c.language;
   text.append(el('p','text-label','ORIGINAL PASSAGE'),story);
-  const column = el('div','players'); const mix = audioPlayer(c.mix,`${c.id} · FINAL SOUND DESIGN`); const narration = audioPlayer(c.narration,`${c.id} · NARRATION ONLY`,true);
+  const column = el('div','players'); const mix = audioPlayer(c.mix,`${c.id} · LATEST SOUND DESIGN`); const narration = audioPlayer(c.narration,`${c.id} · NARRATION ONLY`,true);
+  if(c.review_status === 'NEEDS_HUMAN_LISTENING') column.append(el('p','play-error','待确认 / Listening review pending: the paperweight timing is corrected, but its perceptual identity remains unresolved.'));
   const downloads = el('div','downloads'); for (const [label,path] of [['Download WAV',c.wav],['Event plan',c.plan]]) { const a = el('a','',label); a.href = path; a.download = ''; downloads.append(a); }
   column.append(mix.wrap,narration.wrap,downloads); body.append(text,column);
   const details = el('details','event-details'), summary = el('summary','',`Explore ${c.events.length} sound events`); summary.append(el('span','','Text anchors & rendered timeline →'));
@@ -43,7 +44,7 @@ function card(c) {
 async function init(){
   const list=document.getElementById('demo-list'), count=document.getElementById('result-count');
   try {
-    const response=await fetch('data/cases.json');if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    const response=await fetch('data/cases.json', {cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);
     const data=await response.json();data.cases.forEach(c=>list.append(card(c)));count.textContent=`${data.cases.length} excerpts`;
     document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
       const language=button.dataset.filter;let visible=0;

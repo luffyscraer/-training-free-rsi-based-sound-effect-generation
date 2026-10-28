@@ -5,11 +5,11 @@
   "subtitle": "守闸 · Stone, chains & rushing water",
   "text": "暴雨将至，守闸的顾七发现上游水位突然涨过红线。他踩着石阶跑进闸房，鞋底啪嗒作响；檐角的雨珠滴进铜盆，叮叮连响。顾七拽动铁链，链环哗啦碰撞，沉重闸板却只挪了一寸。他叫徒弟敲响岸边铜锣，村人推着木车沿堤赶来，车轮吱呀滚过碎石。众人合力清出卡住闸槽的断木，水终于轰地冲向备用河道，低处的屋舍保住了。",
   "duration": 31.121,
-  "note": "The opening atmosphere is an optional audiobook bed. Timber friction is audible in context, but exact object identity remains uncertain.",
-  "mix": "media/ZH01-mix.mp3",
-  "narration": "media/ZH01-narration.mp3",
-  "wav": "media/ZH01.wav",
-  "plan": "data/plans/ZH01.json",
+  "note": "New hard-surface steps and chain friction identified in mixed/control comparison; gate friction and repaired wood movement are physically compatible. Gong now independently audible. Opening storm is a design bed, not a requirement for literal rainfall before the storm.",
+  "mix": "media/ZH01-mix.mp3?v=7c09ef7380900162",
+  "narration": "media/ZH01-narration.mp3?v=9c28a220a1abc05a",
+  "wav": "media/ZH01.wav?v=7c09ef7380900162",
+  "plan": "data/plans/ZH01.json?v=7c09ef7380900162",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 0.0,
       "end": 30.621,
       "start_anchor": "暴雨将至",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 0.04,
+      "target_end": 30.6208
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 4.993,
       "end": 7.945,
       "start_anchor": "踩着石阶跑进闸房",
-      "end_anchor": "鞋底啪嗒作响"
+      "end_anchor": "鞋底啪嗒作响",
+      "target_start": 5.043,
+      "target_end": 7.945
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 8.516,
       "end": 10.887,
       "start_anchor": "檐角的雨珠滴进铜盆",
-      "end_anchor": "叮叮连响"
+      "end_anchor": "叮叮连响",
+      "target_start": 8.566,
+      "target_end": 10.887
     },
     {
       "id": "e004",
@@ -53,7 +59,9 @@
       "start": 11.298,
       "end": 15.931,
       "start_anchor": "顾七拽动铁链",
-      "end_anchor": "沉重闸板却只挪了一寸"
+      "end_anchor": "沉重闸板却只挪了一寸",
+      "target_start": 11.348,
+      "target_end": 15.931
     },
     {
       "id": "e005",
@@ -62,9 +70,11 @@
       "sound": "heavy wooden gate scraping slightly",
       "voice_text": null,
       "start": 14.02,
-      "end": 14.576,
+      "end": 15.57,
       "start_anchor": "沉重闸板却只挪了一寸",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 14.07,
+      "target_end": 15.57
     },
     {
       "id": "e006",
@@ -75,7 +85,9 @@
       "start": 18.202,
       "end": 21.252,
       "start_anchor": "敲响岸边铜锣",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 18.252,
+      "target_end": 21.252
     },
     {
       "id": "e007",
@@ -83,10 +95,12 @@
       "kind": "process",
       "sound": "wooden cart wheels creaking over gravel",
       "voice_text": null,
-      "start": 20.134,
+      "start": 20.084,
       "end": 23.796,
       "start_anchor": "村人推着木车沿堤赶来",
-      "end_anchor": "车轮吱呀滚过碎石"
+      "end_anchor": "车轮吱呀滚过碎石",
+      "target_start": 20.134,
+      "target_end": 23.796
     },
     {
       "id": "e008",
@@ -97,7 +111,9 @@
       "start": 24.527,
       "end": 26.577,
       "start_anchor": "众人合力清出卡住闸槽的断木",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 24.577,
+      "target_end": 26.577
     },
     {
       "id": "e009",
@@ -108,8 +124,11 @@
       "start": 27.138,
       "end": 30.621,
       "start_anchor": "水终于轰地冲向备用河道",
-      "end_anchor": "低处的屋舍保住了"
+      "end_anchor": "低处的屋舍保住了",
+      "target_start": 27.138,
+      "target_end": 30.6208
     }
   ],
-  "wav_sha256": "125a3d1b17e00edc8bce0c08b88dcbed9b062e6b09e3e292afdbe5d6af82d8de"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "7c09ef738090016247f6e6e890ca9e833cb51536fce5a532a2255a087f56505e"
 }

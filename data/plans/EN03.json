@@ -5,11 +5,11 @@
   "subtitle": "Wet steps, bellows & the forge",
   "text": "A blacksmith's apprentice accidentally snapped a bride's hairpin, with barely enough time left before the wedding procession. Clutching its box, he ran down the stone street, his shoes splashing through muddy water. Inside the forge, the bellows pumped steadily and the fire crackled higher. His master told him to slow down. He straightened the ornament with small, ringing hammer taps, wound the silver wire back into place, and closed the pliers with a sharp click. Wedding drums drew nearer from the street. He polished the hairpin and returned it before the bridal sedan stopped at the door.",
   "duration": 35.063,
-  "note": "Bellows are supported by mixed-window listening evidence. Some small texture identities remain uncertain beneath the other foreground sounds.",
-  "mix": "media/EN03-mix.mp3",
-  "narration": "media/EN03-narration.mp3",
-  "wav": "media/EN03.wav",
-  "plan": "data/plans/EN03.json",
+  "note": "Wet steps now observed as splashing steps; bellows pumping and fire identified together with clean speech control. Hammer/click/drums remain. Extra polishing and wire-twisting cues are optional rather than mandatory omissions.",
+  "mix": "media/EN03-mix.mp3?v=0a24632fef2f01cd",
+  "narration": "media/EN03-narration.mp3?v=fd84d86ecc788e5a",
+  "wav": "media/EN03.wav?v=0a24632fef2f01cd",
+  "plan": "data/plans/EN03.json?v=0a24632fef2f01cd",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 2.192,
       "end": 2.542,
       "start_anchor": "snapped a bride's hairpin",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 2.242,
+      "target_end": 2.542
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 8.259,
       "end": 11.576,
       "start_anchor": "ran down the stone street, his shoes splashing through muddy water",
-      "end_anchor": "his shoes splashing through muddy water"
+      "end_anchor": "his shoes splashing through muddy water",
+      "target_start": 8.309,
+      "target_end": 11.576
     },
     {
       "id": "e003",
@@ -39,10 +43,12 @@
       "kind": "process",
       "sound": "bellows pumping steadily",
       "voice_text": null,
-      "start": 13.439,
+      "start": 13.389,
       "end": 26.819,
       "start_anchor": "the bellows pumped steadily",
-      "end_anchor": "closed the pliers with a sharp click"
+      "end_anchor": "closed the pliers with a sharp click",
+      "target_start": 13.439,
+      "target_end": 26.819
     },
     {
       "id": "e004",
@@ -53,7 +59,9 @@
       "start": 15.233,
       "end": 26.819,
       "start_anchor": "the fire crackled higher",
-      "end_anchor": "closed the pliers with a sharp click"
+      "end_anchor": "closed the pliers with a sharp click",
+      "target_start": 15.283,
+      "target_end": 26.819
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 19.489,
       "end": 22.347,
       "start_anchor": "He straightened the ornament with small, ringing hammer taps",
-      "end_anchor": "small, ringing hammer taps"
+      "end_anchor": "small, ringing hammer taps",
+      "target_start": 19.539,
+      "target_end": 22.347
     },
     {
       "id": "e006",
@@ -75,7 +85,9 @@
       "start": 25.144,
       "end": 25.394,
       "start_anchor": "closed the pliers with a sharp click",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 25.194,
+      "target_end": 25.394
     },
     {
       "id": "e007",
@@ -86,8 +98,11 @@
       "start": 27.13,
       "end": 34.163,
       "start_anchor": "Wedding drums drew nearer from the street",
-      "end_anchor": "before the bridal sedan stopped at the door"
+      "end_anchor": "before the bridal sedan stopped at the door",
+      "target_start": 27.18,
+      "target_end": 34.163
     }
   ],
-  "wav_sha256": "fb5e31f3c3411803a85383db7180fe4fdc4c9344859561fbb7ed5d28610d7174"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "0a24632fef2f01cdec02829c4cd6fa70ed8bea7afb6ff797aef3c8ebee3410df"
 }

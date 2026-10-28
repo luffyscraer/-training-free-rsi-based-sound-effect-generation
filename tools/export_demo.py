@@ -46,12 +46,14 @@ def main():
     for cid in ORDER:
         r = records[cid]
         source = Path(r['audio_path'])
-        wav = Path(r['delivery_audio'])
+        wav = Path(r.get('delivery_audio', r['audio_path']))
+        latest = 'independent_evidence_status' in r
+        metadata = read(source.parent / 'baseline.json')['case'] if latest else r
         assert hashlib.sha256(wav.read_bytes()).hexdigest() == r['audio_sha256']
         assert hashlib.sha256(source.read_bytes()).hexdigest() == r['audio_sha256']
         tracks = {t['event_id'].removeprefix('track_'): t for t in read(source.parent / 'tracks.json')}
-        event_plan = read(r['event_plan'])['events']
-        timing = {e['event_id']: e for e in read(r['timing_plan'])['events']}
+        event_plan = read(metadata['event_plan'])['events']
+        timing = {e['event_id']: e for e in read(metadata['timing_plan'])['events']}
         events = []
         for i, event in enumerate(event_plan, 1):
             eid = f'e{i:03d}'
@@ -64,25 +66,34 @@ def main():
                 'sound': event.get('sound_en') or f"Voice: {event.get('voice_text')}",
                 'voice_text': event.get('voice_text'),
                 'start': round(start, 3), 'end': round(end, 3),
-                'start_anchor': timing[eid].get('start_span'),
-                'end_anchor': timing[eid].get('end_span'),
+                'start_anchor': track.get('start_anchor_text', timing[eid].get('start_span')),
+                'end_anchor': track.get('end_anchor_text', timing[eid].get('end_span')),
+                'target_start': track.get('target_audible_onset_sec'),
+                'target_end': track.get('target_audible_offset_sec'),
             })
-        assert len(events) == r['event_count'] == len(tracks)
+        assert len(events) == metadata['event_count'] == len(tracks)
         title, subtitle, note = INFO[cid]
+        note = r.get('independent_reasoning', note)
+        narration_source = (args.manifest.parent.parent / 'independent_audit' / cid / 'narration_only.wav'
+                            if latest else source.parent / 'narration_control_matched.wav')
+        version = r['audio_sha256'][:16]
+        narration_version = hashlib.sha256(narration_source.read_bytes()).hexdigest()[:16]
         item = {'id': cid, 'language': 'zh' if cid.startswith('ZH') else 'en',
                 'title': title, 'subtitle': subtitle, 'text': r['source_text'],
                 'duration': round(r['duration_sec'], 3), 'note': note,
-                'mix': f'media/{cid}-mix.mp3', 'narration': f'media/{cid}-narration.mp3',
-                'wav': f'media/{cid}.wav', 'plan': f'data/plans/{cid}.json', 'events': events,
+                'mix': f'media/{cid}-mix.mp3?v={version}', 'narration': f'media/{cid}-narration.mp3?v={narration_version}',
+                'wav': f'media/{cid}.wav?v={version}', 'plan': f'data/plans/{cid}.json?v={version}', 'events': events,
+                'review_status': r.get('independent_evidence_status', 'PROVISIONAL'),
                 'wav_sha256': r['audio_sha256']}
         (plans / f'{cid}.json').write_text(json.dumps(item, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         shutil.copyfile(wav, media / f'{cid}.wav')
         encode(wav, media / f'{cid}-mix.mp3')
-        encode(source.parent / 'narration_control_matched.wav', media / f'{cid}-narration.mp3')
+        encode(narration_source, media / f'{cid}-narration.mp3')
         exported.append(item)
         print(f'{cid}: {len(events)} events, {item["duration"]} sec', flush=True)
     payload = {'title': 'Training-free RSI-based Sound Effect Generation',
-               'collection': 'Curated full excerpts; not a controlled benchmark', 'cases': exported}
+               'collection': 'Curated full excerpts; not a controlled benchmark',
+               'revision': args.manifest.parent.name, 'cases': exported}
     serialized = json.dumps(payload, ensure_ascii=False, indent=2) + '\n'
     assert '/mnt/' not in serialized and '/home/' not in serialized
     (SITE / 'data' / 'cases.json').write_text(serialized, encoding='utf-8')

@@ -5,11 +5,11 @@
   "subtitle": "Metal impacts against moving water",
   "text": "A county painter came to redraw the old sluice gate, but found that someone had quietly replaced its measuring ruler. At dawn he climbed mossy steps, his wooden clogs tapping the stone, while water ran steadily through the sluice tunnel. He tapped the ruler with a small hammer: the old wood sounded dull, but the new wood answered with a hollow knock. He pulled a hidden nail, and an iron plate clanged into a basin. Outside, the gatekeeper rang the departure bell. The painter held up the faulty ruler; the boatmen stopped rowing, leaving only small waves lapping the bank. The gate was sealed before it could be opened by mistake.",
   "duration": 36.619,
-  "note": "The plate impact and nail strike are separate events. Event locations use the executed timeline rather than approximate timestamps from listening reports.",
-  "mix": "media/EN01-mix.mp3",
-  "narration": "media/EN01-narration.mp3",
-  "wav": "media/EN01.wav",
-  "plan": "data/plans/EN01.json",
+  "note": "Clog steps are identified in mixed clip with clean speech control; distinct wooden contacts and metal/bell cues remain. Water tail silence repaired; flowing water transitions to separate small waves. Extra rowing foley is not mandated by the text.",
+  "mix": "media/EN01-mix.mp3?v=4b2fb391dfb0cd30",
+  "narration": "media/EN01-narration.mp3?v=3991544d6b1c9b4f",
+  "wav": "media/EN01.wav?v=4b2fb391dfb0cd30",
+  "plan": "data/plans/EN01.json?v=4b2fb391dfb0cd30",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 7.154,
       "end": 10.696,
       "start_anchor": "climbed mossy steps, his wooden clogs tapping the stone",
-      "end_anchor": "tapping the stone"
+      "end_anchor": "tapping the stone",
+      "target_start": 7.204,
+      "target_end": 10.696
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 11.579,
       "end": 32.945,
       "start_anchor": "water ran steadily through the sluice tunnel",
-      "end_anchor": "leaving only small waves lapping the bank"
+      "end_anchor": "leaving only small waves lapping the bank",
+      "target_start": 11.579,
+      "target_end": 32.945
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 13.837,
       "end": 14.158,
       "start_anchor": "tapped the ruler with a small hammer: the old wood sounded dull",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 13.887,
+      "target_end": 14.487
     },
     {
       "id": "e004",
@@ -51,9 +57,11 @@
       "sound": "hollow knock of a small hammer on new wood",
       "voice_text": null,
       "start": 17.789,
-      "end": 18.268,
+      "end": 18.563,
       "start_anchor": "the new wood answered with a hollow knock",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 17.839,
+      "target_end": 18.639
     },
     {
       "id": "e005",
@@ -61,10 +69,12 @@
       "kind": "short",
       "sound": "nail being pulled out of wood",
       "voice_text": null,
-      "start": 20.187,
+      "start": 20.137,
       "end": 20.687,
       "start_anchor": "pulled a hidden nail",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 20.187,
+      "target_end": 20.687
     },
     {
       "id": "e006",
@@ -72,10 +82,12 @@
       "kind": "short",
       "sound": "iron plate clanging into a metal basin",
       "voice_text": null,
-      "start": 21.907,
-      "end": 23.457,
+      "start": 21.957,
+      "end": 22.656,
       "start_anchor": "an iron plate clanged into a basin",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 21.957,
+      "target_end": 23.457
     },
     {
       "id": "e007",
@@ -83,10 +95,12 @@
       "kind": "short",
       "sound": "large bell ringing",
       "voice_text": null,
-      "start": 24.962,
+      "start": 25.012,
       "end": 28.012,
       "start_anchor": "the gatekeeper rang the departure bell",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 25.012,
+      "target_end": 28.012
     },
     {
       "id": "e008",
@@ -94,11 +108,14 @@
       "kind": "process",
       "sound": "small water waves lapping against the riverbank",
       "voice_text": null,
-      "start": 31.067,
+      "start": 31.117,
       "end": 35.878,
       "start_anchor": "leaving only small waves lapping the bank",
-      "end_anchor": "The gate was sealed before it could be opened by mistake."
+      "end_anchor": "The gate was sealed before it could be opened by mistake.",
+      "target_start": 31.117,
+      "target_end": 35.878
     }
   ],
-  "wav_sha256": "f647e7cd8f70ce9a756814301fd8aa653d3e1fe96d56066823ae56cbf9d0f230"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "4b2fb391dfb0cd302a11ab95dbae92e4d2dcb440dc3cd22fe6a4898d3ce296b9"
 }

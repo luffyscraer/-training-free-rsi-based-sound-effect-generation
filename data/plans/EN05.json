@@ -5,11 +5,11 @@
   "subtitle": "Leaves, wooden impacts & the mill",
   "text": "The granary claimed that the watermill had swallowed three sacks of wheat, and its owner could not defend himself. At night he heard the low hum of the millstone spinning empty. He ran along the stone path, dry leaves rustling underfoot. Wind slapped the back window against its frame, while the wooden grain hopper rocked with a soft clunk. He lifted a floorboard; an iron ring rattled against a hidden door, revealing the missing sacks. He beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance. The bookkeeper recognized the hidden flood passage: the wheat had been swept into it by the water.",
   "duration": 38.163,
-  "note": "The mill is presented as a bounded foreground focus, not a claim that the physical mechanism stops. Floorboard contact is a subtle detail.",
-  "mix": "media/EN05-mix.mp3",
-  "narration": "media/EN05-narration.mp3",
-  "wav": "media/EN05.wav",
-  "plan": "data/plans/EN05.json",
+  "note": "Window impacts identified in mixed clip with clean control; hopper has a soft contact and wood friction precedes the iron-ring action. Window reduced to avoid dominating narration. Exact object identity of friction/impact foley remains approximate.",
+  "mix": "media/EN05-mix.mp3?v=ceee7ed5f3f2de38",
+  "narration": "media/EN05-narration.mp3?v=52702fd3222cf148",
+  "wav": "media/EN05.wav?v=ceee7ed5f3f2de38",
+  "plan": "data/plans/EN05.json?v=ceee7ed5f3f2de38",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 7.653,
       "end": 10.002,
       "start_anchor": "low hum of the millstone spinning empty",
-      "end_anchor": "spinning empty"
+      "end_anchor": "spinning empty",
+      "target_start": 7.653,
+      "target_end": 10.002
     },
     {
       "id": "e002",
@@ -28,10 +30,12 @@
       "kind": "process",
       "sound": "running footsteps on stone path with dry leaves rustling",
       "voice_text": null,
-      "start": 10.564,
+      "start": 10.514,
       "end": 14.705,
       "start_anchor": "ran along the stone path, dry leaves rustling underfoot",
-      "end_anchor": "rustling underfoot"
+      "end_anchor": "rustling underfoot",
+      "target_start": 10.564,
+      "target_end": 14.705
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 15.015,
       "end": 17.414,
       "start_anchor": "Wind slapped the back window against its frame",
-      "end_anchor": "against its frame"
+      "end_anchor": "against its frame",
+      "target_start": 15.065,
+      "target_end": 17.414
     },
     {
       "id": "e004",
@@ -50,10 +56,12 @@
       "kind": "process",
       "sound": "wooden grain hopper rocking with soft clunking sounds",
       "voice_text": null,
-      "start": 18.357,
+      "start": 18.307,
       "end": 20.605,
       "start_anchor": "the wooden grain hopper rocked with a soft clunk",
-      "end_anchor": "soft clunk"
+      "end_anchor": "soft clunk",
+      "target_start": 18.357,
+      "target_end": 20.605
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 21.016,
       "end": 22.266,
       "start_anchor": "lifted a floorboard",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 21.066,
+      "target_end": 22.266
     },
     {
       "id": "e006",
@@ -75,7 +85,9 @@
       "start": 22.518,
       "end": 25.03,
       "start_anchor": "an iron ring rattled against a hidden door",
-      "end_anchor": "hidden door"
+      "end_anchor": "hidden door",
+      "target_start": 22.568,
+      "target_end": 25.03
     },
     {
       "id": "e007",
@@ -86,8 +98,11 @@
       "start": 27.362,
       "end": 32.118,
       "start_anchor": "beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance",
-      "end_anchor": "village entrance"
+      "end_anchor": "village entrance",
+      "target_start": 27.412,
+      "target_end": 32.118
     }
   ],
-  "wav_sha256": "5fe6b4258a42b3f4360f5d92368093756e51e75f4cf9fe62d8c3c4f4c7d70d14"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "ceee7ed5f3f2de38dead29312c45d1a80e32159b6fb7eedec60e8026460352c8"
 }

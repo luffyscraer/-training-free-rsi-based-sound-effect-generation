@@ -5,11 +5,11 @@
   "subtitle": "Mechanical rhythm & a spoken intervention",
   "text": "A troupe wanted new songbooks printed, but the printshop owner saw that the leading character's name kept coming out crooked. She tapped the copper plate lightly on the desk; a bright ding revealed a thin thread in its seam. Night rain rustled across the roof tiles outside. Someone fled through puddles by the back door, wet footsteps fading away, and the wooden latch rattled against the frame. At the mouth of the alley she heard the candyman striking his small copper gong and asked him to stop the fugitive. She tore open the recovered paper packet with a rustle. Inside were the old lyrics: someone had feared the new play would expose a long-ago impersonation.",
   "duration": 40.244,
-  "note": "The copper tap and its resonance are treated as one event. An added short voice performance is omitted from the narration-only reference.",
-  "mix": "media/EN02-mix.mp3",
-  "narration": "media/EN02-narration.mp3",
-  "wav": "media/EN02.wav",
-  "plan": "data/plans/EN02.json",
+  "note": "Copper contact identified in mixed clip with clean control after correcting gain-edit ID. Rain, wet steps, latch, gong and paper remain. Full-listener missing-ding judgement conflicts with local evidence and is retained, not erased.",
+  "mix": "media/EN02-mix.mp3?v=e04ca682353b3e22",
+  "narration": "media/EN02-narration.mp3?v=b3160424bb32874a",
+  "wav": "media/EN02.wav?v=e04ca682353b3e22",
+  "plan": "data/plans/EN02.json?v=e04ca682353b3e22",
   "events": [
     {
       "id": "e001",
@@ -17,10 +17,12 @@
       "kind": "short",
       "sound": "copper plate tapping on desk with a bright metallic ding",
       "voice_text": null,
-      "start": 6.031,
-      "end": 6.887,
+      "start": 6.011,
+      "end": 7.261,
       "start_anchor": "tapped the copper plate lightly on the desk; a bright ding",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 6.061,
+      "target_end": 7.261
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 11.093,
       "end": 26.373,
       "start_anchor": "Night rain rustled across the roof tiles outside",
-      "end_anchor": "asked him to stop the fugitive"
+      "end_anchor": "asked him to stop the fugitive",
+      "target_start": 11.093,
+      "target_end": 26.373
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 14.812,
       "end": 18.273,
       "start_anchor": "fled through puddles by the back door, wet footsteps fading away",
-      "end_anchor": "wet footsteps fading away"
+      "end_anchor": "wet footsteps fading away",
+      "target_start": 14.862,
+      "target_end": 18.273
     },
     {
       "id": "e004",
@@ -53,7 +59,9 @@
       "start": 18.845,
       "end": 20.621,
       "start_anchor": "the wooden latch rattled against the frame",
-      "end_anchor": "the wooden latch rattled against the frame"
+      "end_anchor": "the wooden latch rattled against the frame",
+      "target_start": 18.895,
+      "target_end": 20.621
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 22.415,
       "end": 26.373,
       "start_anchor": "the candyman striking his small copper gong",
-      "end_anchor": "asked him to stop the fugitive"
+      "end_anchor": "asked him to stop the fugitive",
+      "target_start": 22.465,
+      "target_end": 26.373
     },
     {
       "id": "e006",
@@ -75,7 +85,9 @@
       "start": 26.423,
       "end": 29.547,
       "start_anchor": "asked him to stop the fugitive",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 26.473,
+      "target_end": 29.747
     },
     {
       "id": "e007",
@@ -83,11 +95,14 @@
       "kind": "process",
       "sound": "paper packet being torn open with a continuous rustling sound",
       "voice_text": null,
-      "start": 30.418,
+      "start": 30.468,
       "end": 33.637,
       "start_anchor": "tore open the recovered paper packet with a rustle",
-      "end_anchor": "tore open the recovered paper packet with a rustle"
+      "end_anchor": "tore open the recovered paper packet with a rustle",
+      "target_start": 30.468,
+      "target_end": 33.637
     }
   ],
-  "wav_sha256": "b608109a3a05c0094809ddc3170b6cce076b29c5db185fb5d0923fa4781193a3"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "e04ca682353b3e22a3843a5984a83aa3b99a359e9374707645c7cda87289b570"
 }

@@ -15,7 +15,7 @@ Target repository (created by the owner): `-training-free-rsi-based-sound-effect
 Expected URL after a successful deployment:
 https://luffyscraer.github.io/-training-free-rsi-based-sound-effect-generation/
 
-This URL is a publication target, not a claim of an existing deployment.
+Latest local export: `final_review_v8` (2026-10-28). Nine excerpts are provisionally acceptable on current evidence; ZH05 is explicitly pending listening confirmation. Check the deployed data index's `revision` before assuming a new export is live.
 
 1. Authenticate to GitHub locally using `gh auth login` (never put a token in page files).
 2. Create the public repository above, and push **only this directory** to its `main` branch. Do not upload the parent audiobook project or experiment directories.

@@ -5,11 +5,11 @@
   "subtitle": "A quiet rain bed & a sudden collapse",
   "text": "Sheltering from rain in a mountain shrine, an old carpenter heard a faint crack from a roof beam and suspected that its joint had loosened. His footsteps thudded over damp bricks as he held up a flame to inspect the split. Rain pattered densely on the tiles, and a gust scattered ash from the incense burner across the floor. He hurriedly struck a small bronze bell to warn everyone out of the side hall. A moment later the rotten beam fell with a crash, but no one was hurt. He cordoned off the area and promised the shrine keeper that he would return to repair the roof when the weather cleared.",
   "duration": 34.27,
-  "note": "The rain is intentionally restrained beneath narration. The gust is subtle and its exact identity remains uncertain; listen for the warning bell and collapse.",
-  "mix": "media/EN04-mix.mp3",
-  "narration": "media/EN04-narration.mp3",
-  "wav": "media/EN04.wav",
-  "plan": "data/plans/EN04.json",
+  "note": "Faint crack identified in mixed clip with clean control; do not demand a heavy crash for a faint warning. Rain seam repaired, brief gust strengthened, bell and later collapse retained. Separate audible dust grains are not mandatory.",
+  "mix": "media/EN04-mix.mp3?v=5845e1f471fe5405",
+  "narration": "media/EN04-narration.mp3?v=ef49a9142878c495",
+  "wav": "media/EN04.wav?v=5845e1f471fe5405",
+  "plan": "data/plans/EN04.json?v=5845e1f471fe5405",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 3.232,
       "end": 4.278,
       "start_anchor": "heard a faint crack from a roof beam",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 3.282,
+      "target_end": 4.482
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 8.056,
       "end": 12.271,
       "start_anchor": "footsteps thudded over damp bricks",
-      "end_anchor": "inspect the split"
+      "end_anchor": "inspect the split",
+      "target_start": 8.106,
+      "target_end": 12.271
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 0.12,
       "end": 33.77,
       "start_anchor": "Sheltering from rain in a mountain shrine",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 0.12,
+      "target_end": 33.7697
     },
     {
       "id": "e004",
@@ -50,10 +56,12 @@
       "kind": "process",
       "sound": "wind gust scattering ash across the floor",
       "voice_text": null,
-      "start": 15.294,
+      "start": 15.244,
       "end": 18.157,
       "start_anchor": "a gust scattered ash from the incense burner across the floor",
-      "end_anchor": "across the floor"
+      "end_anchor": "across the floor",
+      "target_start": 15.294,
+      "target_end": 18.157
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 19.191,
       "end": 22.241,
       "start_anchor": "struck a small bronze bell",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 19.241,
+      "target_end": 22.241
     },
     {
       "id": "e006",
@@ -75,8 +85,11 @@
       "start": 23.996,
       "end": 26.546,
       "start_anchor": "the rotten beam fell with a crash",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 24.046,
+      "target_end": 26.546
     }
   ],
-  "wav_sha256": "b7703f42a1a793f4cdf391b87e4951ef3a60e01e4456e64b385132e6a2cabef1"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "5845e1f471fe5405d559364d73a06b471978dde4c868eeaf4482bd12b2971a84"
 }

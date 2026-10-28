@@ -1,6 +1,7 @@
 {
   "title": "Training-free RSI-based Sound Effect Generation",
   "collection": "Curated full excerpts; not a controlled benchmark",
+  "revision": "final_review_v8",
   "cases": [
     {
       "id": "ZH04",
@@ -9,11 +10,11 @@
       "subtitle": "山祠避雨 · Thunder, dripping water & distant bells",
       "text": "山祠外雷声滚过，采药人叶青扶着受伤的樵夫避进殿里，草鞋在泥地上啪嗒作响。漏雨从瓦缝滴进陶钵，嗒嗒不停；她掀开旧帘，布面哗啦抖出积尘。祠后忽然传来鹿的短鸣，叶青循着声音找到干草和净水，木桶碰井沿咚的一声。她替樵夫包好脚踝，等山路上的驮队铜铃靠近，才将人交给熟识的赶路人。",
       "duration": 28.149,
-      "note": "Layered dripping continues beneath brief events. The animal call, bucket impact, and approaching bells were checked in their mixed context against a narration reference.",
-      "mix": "media/ZH04-mix.mp3",
-      "narration": "media/ZH04-narration.mp3",
-      "wav": "media/ZH04.wav",
-      "plan": "data/plans/ZH04.json",
+      "note": "Drip sequence replaced pouring/fire-like candidates; bucket impact and approaching bells audible in local mixed review. Animal cue is audible but exact deer species identity is not independently established; not a claim of a field recording.",
+      "mix": "media/ZH04-mix.mp3?v=d617d706180ffbbd",
+      "narration": "media/ZH04-narration.mp3?v=43051dd4534ef41f",
+      "wav": "media/ZH04.wav?v=d617d706180ffbbd",
+      "plan": "data/plans/ZH04.json?v=d617d706180ffbbd",
       "events": [
         {
           "id": "e001",
@@ -24,7 +25,9 @@
           "start": 0.03,
           "end": 3.08,
           "start_anchor": "山祠外雷声滚过",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 0.08,
+          "target_end": 3.08
         },
         {
           "id": "e002",
@@ -35,7 +38,9 @@
           "start": 2.131,
           "end": 7.762,
           "start_anchor": "采药人叶青扶着受伤的樵夫避进殿里，草鞋在泥地上啪嗒作响",
-          "end_anchor": "草鞋在泥地上啪嗒作响"
+          "end_anchor": "草鞋在泥地上啪嗒作响",
+          "target_start": 2.181,
+          "target_end": 7.762
         },
         {
           "id": "e003",
@@ -43,10 +48,12 @@
           "kind": "process",
           "sound": "rainwater dripping into a clay bowl",
           "voice_text": null,
-          "start": 7.842,
+          "start": 7.792,
           "end": 27.649,
           "start_anchor": "漏雨从瓦缝滴进陶钵",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 7.842,
+          "target_end": 27.6486
         },
         {
           "id": "e004",
@@ -54,10 +61,12 @@
           "kind": "process",
           "sound": "old cloth curtain being shaken with rustling sound",
           "voice_text": null,
-          "start": 11.434,
+          "start": 11.484,
           "end": 14.204,
           "start_anchor": "她掀开旧帘",
-          "end_anchor": "布面哗啦抖出积尘"
+          "end_anchor": "布面哗啦抖出积尘",
+          "target_start": 11.484,
+          "target_end": 14.204
         },
         {
           "id": "e005",
@@ -68,7 +77,9 @@
           "start": 15.115,
           "end": 16.365,
           "start_anchor": "祠后忽然传来鹿的短鸣",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 15.165,
+          "target_end": 16.365
         },
         {
           "id": "e006",
@@ -76,10 +87,12 @@
           "kind": "short",
           "sound": "wooden bucket hitting stone well rim",
           "voice_text": null,
-          "start": 19.596,
+          "start": 19.646,
           "end": 20.446,
           "start_anchor": "木桶碰井沿咚的一声",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 19.646,
+          "target_end": 20.446
         },
         {
           "id": "e007",
@@ -87,13 +100,16 @@
           "kind": "process",
           "sound": "pack mule team copper bells jingling while approaching",
           "voice_text": null,
-          "start": 23.637,
+          "start": 23.687,
           "end": 27.649,
           "start_anchor": "等山路上的驮队铜铃靠近",
-          "end_anchor": "才将人交给熟识的赶路人"
+          "end_anchor": "才将人交给熟识的赶路人",
+          "target_start": 23.687,
+          "target_end": 27.6486
         }
       ],
-      "wav_sha256": "9c1464c21b4b75ba334b9d8e96e85f3d3980fe2f6478e37235c58a42c1ca39f0"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "d617d706180ffbbde785f25fd84e2ad050a7b6780e20d714aca5d64b3f86efee"
     },
     {
       "id": "EN04",
@@ -102,11 +118,11 @@
       "subtitle": "A quiet rain bed & a sudden collapse",
       "text": "Sheltering from rain in a mountain shrine, an old carpenter heard a faint crack from a roof beam and suspected that its joint had loosened. His footsteps thudded over damp bricks as he held up a flame to inspect the split. Rain pattered densely on the tiles, and a gust scattered ash from the incense burner across the floor. He hurriedly struck a small bronze bell to warn everyone out of the side hall. A moment later the rotten beam fell with a crash, but no one was hurt. He cordoned off the area and promised the shrine keeper that he would return to repair the roof when the weather cleared.",
       "duration": 34.27,
-      "note": "The rain is intentionally restrained beneath narration. The gust is subtle and its exact identity remains uncertain; listen for the warning bell and collapse.",
-      "mix": "media/EN04-mix.mp3",
-      "narration": "media/EN04-narration.mp3",
-      "wav": "media/EN04.wav",
-      "plan": "data/plans/EN04.json",
+      "note": "Faint crack identified in mixed clip with clean control; do not demand a heavy crash for a faint warning. Rain seam repaired, brief gust strengthened, bell and later collapse retained. Separate audible dust grains are not mandatory.",
+      "mix": "media/EN04-mix.mp3?v=5845e1f471fe5405",
+      "narration": "media/EN04-narration.mp3?v=ef49a9142878c495",
+      "wav": "media/EN04.wav?v=5845e1f471fe5405",
+      "plan": "data/plans/EN04.json?v=5845e1f471fe5405",
       "events": [
         {
           "id": "e001",
@@ -117,7 +133,9 @@
           "start": 3.232,
           "end": 4.278,
           "start_anchor": "heard a faint crack from a roof beam",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 3.282,
+          "target_end": 4.482
         },
         {
           "id": "e002",
@@ -128,7 +146,9 @@
           "start": 8.056,
           "end": 12.271,
           "start_anchor": "footsteps thudded over damp bricks",
-          "end_anchor": "inspect the split"
+          "end_anchor": "inspect the split",
+          "target_start": 8.106,
+          "target_end": 12.271
         },
         {
           "id": "e003",
@@ -139,7 +159,9 @@
           "start": 0.12,
           "end": 33.77,
           "start_anchor": "Sheltering from rain in a mountain shrine",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 0.12,
+          "target_end": 33.7697
         },
         {
           "id": "e004",
@@ -147,10 +169,12 @@
           "kind": "process",
           "sound": "wind gust scattering ash across the floor",
           "voice_text": null,
-          "start": 15.294,
+          "start": 15.244,
           "end": 18.157,
           "start_anchor": "a gust scattered ash from the incense burner across the floor",
-          "end_anchor": "across the floor"
+          "end_anchor": "across the floor",
+          "target_start": 15.294,
+          "target_end": 18.157
         },
         {
           "id": "e005",
@@ -161,7 +185,9 @@
           "start": 19.191,
           "end": 22.241,
           "start_anchor": "struck a small bronze bell",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 19.241,
+          "target_end": 22.241
         },
         {
           "id": "e006",
@@ -172,10 +198,13 @@
           "start": 23.996,
           "end": 26.546,
           "start_anchor": "the rotten beam fell with a crash",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 24.046,
+          "target_end": 26.546
         }
       ],
-      "wav_sha256": "b7703f42a1a793f4cdf391b87e4951ef3a60e01e4456e64b385132e6a2cabef1"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "5845e1f471fe5405d559364d73a06b471978dde4c868eeaf4482bd12b2971a84"
     },
     {
       "id": "ZH05",
@@ -184,11 +213,11 @@
       "subtitle": "画师与卷轴 · Window impact, rain & unfurling cloth",
       "text": "山祠里寄住的画师怕雨毁了新画，抱卷轴跑过石阶，鞋跟嗒嗒响。风撞开木窗，窗扇砰地拍墙，雨水沙沙扫过纸屏。他请守祠老人帮忙压住画角，老人用铜镇纸叮地落案。两人卷起画布时，绢面呼啦收拢，露出画背写着的失散名单。老人认出其中一位是自己的女儿，决定天一亮便下山打听，不再独自守着空殿。",
       "duration": 26.802,
-      "note": "Listen for the window impact, paperweight, and canvas against the rain. A separate wind or hinge track is not assumed necessary for the same action.",
-      "mix": "media/ZH05-mix.mp3",
-      "narration": "media/ZH05-narration.mp3",
-      "wav": "media/ZH05.wav",
-      "plan": "data/plans/ZH05.json",
+      "note": "Steps, window impact, rain and cloth have supporting source/mixed evidence. Metal contact exists at corrected 14.412-second anchor, but local mixed listening cannot reliably identify it despite source changes and format control. Final perceptual acceptance is withheld.",
+      "mix": "media/ZH05-mix.mp3?v=1f69c5998c878f1a",
+      "narration": "media/ZH05-narration.mp3?v=2d4b5ed8427767db",
+      "wav": "media/ZH05.wav?v=1f69c5998c878f1a",
+      "plan": "data/plans/ZH05.json?v=1f69c5998c878f1a",
       "events": [
         {
           "id": "e001",
@@ -199,7 +228,9 @@
           "start": 2.952,
           "end": 5.785,
           "start_anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
-          "end_anchor": "鞋跟嗒嗒响"
+          "end_anchor": "鞋跟嗒嗒响",
+          "target_start": 3.002,
+          "target_end": 5.785
         },
         {
           "id": "e002",
@@ -210,7 +241,9 @@
           "start": 7.636,
           "end": 9.186,
           "start_anchor": "窗扇砰地拍墙",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 7.686,
+          "target_end": 9.186
         },
         {
           "id": "e003",
@@ -218,10 +251,12 @@
           "kind": "process",
           "sound": "rain sweeping across paper screen",
           "voice_text": null,
-          "start": 9.158,
+          "start": 9.208,
           "end": 26.302,
           "start_anchor": "雨水沙沙扫过纸屏",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 9.208,
+          "target_end": 26.3019
         },
         {
           "id": "e004",
@@ -229,10 +264,12 @@
           "kind": "short",
           "sound": "bronze paperweight dropping onto table",
           "voice_text": null,
-          "start": 13.421,
-          "end": 14.471,
-          "start_anchor": "老人用铜镇纸叮地落案",
-          "end_anchor": null
+          "start": 14.362,
+          "end": 15.412,
+          "start_anchor": "叮地落案",
+          "end_anchor": null,
+          "target_start": 14.412,
+          "target_end": 15.412
         },
         {
           "id": "e005",
@@ -243,10 +280,13 @@
           "start": 17.064,
           "end": 17.914,
           "start_anchor": "绢面呼啦收拢",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 17.114,
+          "target_end": 17.914
         }
       ],
-      "wav_sha256": "b38a7316eb00f5062275685c72dccaddc0793342a93700e3d0cd0f70b413d8f3"
+      "review_status": "NEEDS_HUMAN_LISTENING",
+      "wav_sha256": "1f69c5998c878f1ab55516d11dc8221069b9029952c1cfb6063ea8dd2dc1d6fb"
     },
     {
       "id": "EN02",
@@ -255,11 +295,11 @@
       "subtitle": "Mechanical rhythm & a spoken intervention",
       "text": "A troupe wanted new songbooks printed, but the printshop owner saw that the leading character's name kept coming out crooked. She tapped the copper plate lightly on the desk; a bright ding revealed a thin thread in its seam. Night rain rustled across the roof tiles outside. Someone fled through puddles by the back door, wet footsteps fading away, and the wooden latch rattled against the frame. At the mouth of the alley she heard the candyman striking his small copper gong and asked him to stop the fugitive. She tore open the recovered paper packet with a rustle. Inside were the old lyrics: someone had feared the new play would expose a long-ago impersonation.",
       "duration": 40.244,
-      "note": "The copper tap and its resonance are treated as one event. An added short voice performance is omitted from the narration-only reference.",
-      "mix": "media/EN02-mix.mp3",
-      "narration": "media/EN02-narration.mp3",
-      "wav": "media/EN02.wav",
-      "plan": "data/plans/EN02.json",
+      "note": "Copper contact identified in mixed clip with clean control after correcting gain-edit ID. Rain, wet steps, latch, gong and paper remain. Full-listener missing-ding judgement conflicts with local evidence and is retained, not erased.",
+      "mix": "media/EN02-mix.mp3?v=e04ca682353b3e22",
+      "narration": "media/EN02-narration.mp3?v=b3160424bb32874a",
+      "wav": "media/EN02.wav?v=e04ca682353b3e22",
+      "plan": "data/plans/EN02.json?v=e04ca682353b3e22",
       "events": [
         {
           "id": "e001",
@@ -267,10 +307,12 @@
           "kind": "short",
           "sound": "copper plate tapping on desk with a bright metallic ding",
           "voice_text": null,
-          "start": 6.031,
-          "end": 6.887,
+          "start": 6.011,
+          "end": 7.261,
           "start_anchor": "tapped the copper plate lightly on the desk; a bright ding",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 6.061,
+          "target_end": 7.261
         },
         {
           "id": "e002",
@@ -281,7 +323,9 @@
           "start": 11.093,
           "end": 26.373,
           "start_anchor": "Night rain rustled across the roof tiles outside",
-          "end_anchor": "asked him to stop the fugitive"
+          "end_anchor": "asked him to stop the fugitive",
+          "target_start": 11.093,
+          "target_end": 26.373
         },
         {
           "id": "e003",
@@ -292,7 +336,9 @@
           "start": 14.812,
           "end": 18.273,
           "start_anchor": "fled through puddles by the back door, wet footsteps fading away",
-          "end_anchor": "wet footsteps fading away"
+          "end_anchor": "wet footsteps fading away",
+          "target_start": 14.862,
+          "target_end": 18.273
         },
         {
           "id": "e004",
@@ -303,7 +349,9 @@
           "start": 18.845,
           "end": 20.621,
           "start_anchor": "the wooden latch rattled against the frame",
-          "end_anchor": "the wooden latch rattled against the frame"
+          "end_anchor": "the wooden latch rattled against the frame",
+          "target_start": 18.895,
+          "target_end": 20.621
         },
         {
           "id": "e005",
@@ -314,7 +362,9 @@
           "start": 22.415,
           "end": 26.373,
           "start_anchor": "the candyman striking his small copper gong",
-          "end_anchor": "asked him to stop the fugitive"
+          "end_anchor": "asked him to stop the fugitive",
+          "target_start": 22.465,
+          "target_end": 26.373
         },
         {
           "id": "e006",
@@ -325,7 +375,9 @@
           "start": 26.423,
           "end": 29.547,
           "start_anchor": "asked him to stop the fugitive",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 26.473,
+          "target_end": 29.747
         },
         {
           "id": "e007",
@@ -333,13 +385,16 @@
           "kind": "process",
           "sound": "paper packet being torn open with a continuous rustling sound",
           "voice_text": null,
-          "start": 30.418,
+          "start": 30.468,
           "end": 33.637,
           "start_anchor": "tore open the recovered paper packet with a rustle",
-          "end_anchor": "tore open the recovered paper packet with a rustle"
+          "end_anchor": "tore open the recovered paper packet with a rustle",
+          "target_start": 30.468,
+          "target_end": 33.637
         }
       ],
-      "wav_sha256": "b608109a3a05c0094809ddc3170b6cce076b29c5db185fb5d0923fa4781193a3"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "e04ca682353b3e22a3843a5984a83aa3b99a359e9374707645c7cda87289b570"
     },
     {
       "id": "ZH01",
@@ -348,11 +403,11 @@
       "subtitle": "守闸 · Stone, chains & rushing water",
       "text": "暴雨将至，守闸的顾七发现上游水位突然涨过红线。他踩着石阶跑进闸房，鞋底啪嗒作响；檐角的雨珠滴进铜盆，叮叮连响。顾七拽动铁链，链环哗啦碰撞，沉重闸板却只挪了一寸。他叫徒弟敲响岸边铜锣，村人推着木车沿堤赶来，车轮吱呀滚过碎石。众人合力清出卡住闸槽的断木，水终于轰地冲向备用河道，低处的屋舍保住了。",
       "duration": 31.121,
-      "note": "The opening atmosphere is an optional audiobook bed. Timber friction is audible in context, but exact object identity remains uncertain.",
-      "mix": "media/ZH01-mix.mp3",
-      "narration": "media/ZH01-narration.mp3",
-      "wav": "media/ZH01.wav",
-      "plan": "data/plans/ZH01.json",
+      "note": "New hard-surface steps and chain friction identified in mixed/control comparison; gate friction and repaired wood movement are physically compatible. Gong now independently audible. Opening storm is a design bed, not a requirement for literal rainfall before the storm.",
+      "mix": "media/ZH01-mix.mp3?v=7c09ef7380900162",
+      "narration": "media/ZH01-narration.mp3?v=9c28a220a1abc05a",
+      "wav": "media/ZH01.wav?v=7c09ef7380900162",
+      "plan": "data/plans/ZH01.json?v=7c09ef7380900162",
       "events": [
         {
           "id": "e001",
@@ -363,7 +418,9 @@
           "start": 0.0,
           "end": 30.621,
           "start_anchor": "暴雨将至",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 0.04,
+          "target_end": 30.6208
         },
         {
           "id": "e002",
@@ -374,7 +431,9 @@
           "start": 4.993,
           "end": 7.945,
           "start_anchor": "踩着石阶跑进闸房",
-          "end_anchor": "鞋底啪嗒作响"
+          "end_anchor": "鞋底啪嗒作响",
+          "target_start": 5.043,
+          "target_end": 7.945
         },
         {
           "id": "e003",
@@ -385,7 +444,9 @@
           "start": 8.516,
           "end": 10.887,
           "start_anchor": "檐角的雨珠滴进铜盆",
-          "end_anchor": "叮叮连响"
+          "end_anchor": "叮叮连响",
+          "target_start": 8.566,
+          "target_end": 10.887
         },
         {
           "id": "e004",
@@ -396,7 +457,9 @@
           "start": 11.298,
           "end": 15.931,
           "start_anchor": "顾七拽动铁链",
-          "end_anchor": "沉重闸板却只挪了一寸"
+          "end_anchor": "沉重闸板却只挪了一寸",
+          "target_start": 11.348,
+          "target_end": 15.931
         },
         {
           "id": "e005",
@@ -405,9 +468,11 @@
           "sound": "heavy wooden gate scraping slightly",
           "voice_text": null,
           "start": 14.02,
-          "end": 14.576,
+          "end": 15.57,
           "start_anchor": "沉重闸板却只挪了一寸",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 14.07,
+          "target_end": 15.57
         },
         {
           "id": "e006",
@@ -418,7 +483,9 @@
           "start": 18.202,
           "end": 21.252,
           "start_anchor": "敲响岸边铜锣",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 18.252,
+          "target_end": 21.252
         },
         {
           "id": "e007",
@@ -426,10 +493,12 @@
           "kind": "process",
           "sound": "wooden cart wheels creaking over gravel",
           "voice_text": null,
-          "start": 20.134,
+          "start": 20.084,
           "end": 23.796,
           "start_anchor": "村人推着木车沿堤赶来",
-          "end_anchor": "车轮吱呀滚过碎石"
+          "end_anchor": "车轮吱呀滚过碎石",
+          "target_start": 20.134,
+          "target_end": 23.796
         },
         {
           "id": "e008",
@@ -440,7 +509,9 @@
           "start": 24.527,
           "end": 26.577,
           "start_anchor": "众人合力清出卡住闸槽的断木",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 24.577,
+          "target_end": 26.577
         },
         {
           "id": "e009",
@@ -451,10 +522,13 @@
           "start": 27.138,
           "end": 30.621,
           "start_anchor": "水终于轰地冲向备用河道",
-          "end_anchor": "低处的屋舍保住了"
+          "end_anchor": "低处的屋舍保住了",
+          "target_start": 27.138,
+          "target_end": 30.6208
         }
       ],
-      "wav_sha256": "125a3d1b17e00edc8bce0c08b88dcbed9b062e6b09e3e292afdbe5d6af82d8de"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "7c09ef738090016247f6e6e890ca9e833cb51536fce5a532a2255a087f56505e"
     },
     {
       "id": "EN01",
@@ -463,11 +537,11 @@
       "subtitle": "Metal impacts against moving water",
       "text": "A county painter came to redraw the old sluice gate, but found that someone had quietly replaced its measuring ruler. At dawn he climbed mossy steps, his wooden clogs tapping the stone, while water ran steadily through the sluice tunnel. He tapped the ruler with a small hammer: the old wood sounded dull, but the new wood answered with a hollow knock. He pulled a hidden nail, and an iron plate clanged into a basin. Outside, the gatekeeper rang the departure bell. The painter held up the faulty ruler; the boatmen stopped rowing, leaving only small waves lapping the bank. The gate was sealed before it could be opened by mistake.",
       "duration": 36.619,
-      "note": "The plate impact and nail strike are separate events. Event locations use the executed timeline rather than approximate timestamps from listening reports.",
-      "mix": "media/EN01-mix.mp3",
-      "narration": "media/EN01-narration.mp3",
-      "wav": "media/EN01.wav",
-      "plan": "data/plans/EN01.json",
+      "note": "Clog steps are identified in mixed clip with clean speech control; distinct wooden contacts and metal/bell cues remain. Water tail silence repaired; flowing water transitions to separate small waves. Extra rowing foley is not mandated by the text.",
+      "mix": "media/EN01-mix.mp3?v=4b2fb391dfb0cd30",
+      "narration": "media/EN01-narration.mp3?v=3991544d6b1c9b4f",
+      "wav": "media/EN01.wav?v=4b2fb391dfb0cd30",
+      "plan": "data/plans/EN01.json?v=4b2fb391dfb0cd30",
       "events": [
         {
           "id": "e001",
@@ -478,7 +552,9 @@
           "start": 7.154,
           "end": 10.696,
           "start_anchor": "climbed mossy steps, his wooden clogs tapping the stone",
-          "end_anchor": "tapping the stone"
+          "end_anchor": "tapping the stone",
+          "target_start": 7.204,
+          "target_end": 10.696
         },
         {
           "id": "e002",
@@ -489,7 +565,9 @@
           "start": 11.579,
           "end": 32.945,
           "start_anchor": "water ran steadily through the sluice tunnel",
-          "end_anchor": "leaving only small waves lapping the bank"
+          "end_anchor": "leaving only small waves lapping the bank",
+          "target_start": 11.579,
+          "target_end": 32.945
         },
         {
           "id": "e003",
@@ -500,7 +578,9 @@
           "start": 13.837,
           "end": 14.158,
           "start_anchor": "tapped the ruler with a small hammer: the old wood sounded dull",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 13.887,
+          "target_end": 14.487
         },
         {
           "id": "e004",
@@ -509,9 +589,11 @@
           "sound": "hollow knock of a small hammer on new wood",
           "voice_text": null,
           "start": 17.789,
-          "end": 18.268,
+          "end": 18.563,
           "start_anchor": "the new wood answered with a hollow knock",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 17.839,
+          "target_end": 18.639
         },
         {
           "id": "e005",
@@ -519,10 +601,12 @@
           "kind": "short",
           "sound": "nail being pulled out of wood",
           "voice_text": null,
-          "start": 20.187,
+          "start": 20.137,
           "end": 20.687,
           "start_anchor": "pulled a hidden nail",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 20.187,
+          "target_end": 20.687
         },
         {
           "id": "e006",
@@ -530,10 +614,12 @@
           "kind": "short",
           "sound": "iron plate clanging into a metal basin",
           "voice_text": null,
-          "start": 21.907,
-          "end": 23.457,
+          "start": 21.957,
+          "end": 22.656,
           "start_anchor": "an iron plate clanged into a basin",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 21.957,
+          "target_end": 23.457
         },
         {
           "id": "e007",
@@ -541,10 +627,12 @@
           "kind": "short",
           "sound": "large bell ringing",
           "voice_text": null,
-          "start": 24.962,
+          "start": 25.012,
           "end": 28.012,
           "start_anchor": "the gatekeeper rang the departure bell",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 25.012,
+          "target_end": 28.012
         },
         {
           "id": "e008",
@@ -552,13 +640,16 @@
           "kind": "process",
           "sound": "small water waves lapping against the riverbank",
           "voice_text": null,
-          "start": 31.067,
+          "start": 31.117,
           "end": 35.878,
           "start_anchor": "leaving only small waves lapping the bank",
-          "end_anchor": "The gate was sealed before it could be opened by mistake."
+          "end_anchor": "The gate was sealed before it could be opened by mistake.",
+          "target_start": 31.117,
+          "target_end": 35.878
         }
       ],
-      "wav_sha256": "f647e7cd8f70ce9a756814301fd8aa653d3e1fe96d56066823ae56cbf9d0f230"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "4b2fb391dfb0cd302a11ab95dbae92e4d2dcb440dc3cd22fe6a4898d3ce296b9"
     },
     {
       "id": "ZH02",
@@ -567,11 +658,11 @@
       "subtitle": "印坊 · A press, scattered paper & a warning",
       "text": "印坊赶制赈灾告示，学徒小泉却听见压版机每转一圈都发出异样的嘎哒声。他沿长桌走过去，木地板咚咚回响，掀起纸堆时纸页哗啦散开。砚台被人推落，啪地碎成两半，他在碎片下找到调换的铜字。院里驴车铃声已响，押运人催着发车。小泉喊停师傅，用木槌逐字敲回正确版面，滚筒重新吱呀转起时，百姓看见的才是真正的放粮日期。",
       "duration": 30.496,
-      "note": "The added warning voice is brief; its separation from the narrator remains limited. The press can compete slightly with narration.",
-      "mix": "media/ZH02-mix.mp3",
-      "narration": "media/ZH02-narration.mp3",
-      "wav": "media/ZH02.wav",
-      "plan": "data/plans/ZH02.json",
+      "note": "Rhythmic press, steps, rustling paper, bells and roller friction are supported by source and mixed observations. A narration-only bell false positive is retained and weakens that individual model statement; source-only jingling provides separate support.",
+      "mix": "media/ZH02-mix.mp3?v=6a8386129e6c6293",
+      "narration": "media/ZH02-narration.mp3?v=25422c31c47ee00b",
+      "wav": "media/ZH02.wav?v=6a8386129e6c6293",
+      "plan": "data/plans/ZH02.json?v=6a8386129e6c6293",
       "events": [
         {
           "id": "e001",
@@ -582,7 +673,9 @@
           "start": 3.242,
           "end": 22.397,
           "start_anchor": "压版机每转一圈都发出异样的嘎哒声",
-          "end_anchor": "小泉喊停师傅"
+          "end_anchor": "小泉喊停师傅",
+          "target_start": 3.242,
+          "target_end": 22.397
         },
         {
           "id": "e002",
@@ -593,7 +686,9 @@
           "start": 6.395,
           "end": 9.167,
           "start_anchor": "沿长桌走过去",
-          "end_anchor": "木地板咚咚回响"
+          "end_anchor": "木地板咚咚回响",
+          "target_start": 6.445,
+          "target_end": 9.167
         },
         {
           "id": "e003",
@@ -601,10 +696,12 @@
           "kind": "process",
           "sound": "paper sheets rustling and scattering",
           "voice_text": null,
-          "start": 9.597,
+          "start": 9.647,
           "end": 11.529,
           "start_anchor": "掀起纸堆时",
-          "end_anchor": "纸页哗啦散开"
+          "end_anchor": "纸页哗啦散开",
+          "target_start": 9.647,
+          "target_end": 11.529
         },
         {
           "id": "e004",
@@ -615,7 +712,9 @@
           "start": 12.116,
           "end": 13.666,
           "start_anchor": "啪地碎成两半",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 13.13,
+          "target_end": 14.63
         },
         {
           "id": "e005",
@@ -626,7 +725,9 @@
           "start": 17.243,
           "end": 20.175,
           "start_anchor": "院里驴车铃声已响",
-          "end_anchor": "押运人催着发车"
+          "end_anchor": "押运人催着发车",
+          "target_start": 17.293,
+          "target_end": 20.175
         },
         {
           "id": "e006",
@@ -637,7 +738,9 @@
           "start": 22.517,
           "end": 22.912,
           "start_anchor": "小泉喊停师傅",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 22.537,
+          "target_end": 22.9317
         },
         {
           "id": "e007",
@@ -648,7 +751,9 @@
           "start": 23.002,
           "end": 24.533,
           "start_anchor": "用木槌逐字敲回正确版面",
-          "end_anchor": "敲回正确版面"
+          "end_anchor": "敲回正确版面",
+          "target_start": 23.0517,
+          "target_end": 24.5327
         },
         {
           "id": "e008",
@@ -659,10 +764,13 @@
           "start": 24.983,
           "end": 29.996,
           "start_anchor": "滚筒重新吱呀转起时",
-          "end_anchor": "才是真正的放粮日期"
+          "end_anchor": "才是真正的放粮日期",
+          "target_start": 25.0327,
+          "target_end": 29.9965
         }
       ],
-      "wav_sha256": "cebc6d46c74a726bf150295621159cba313c178ba77ce6086d6daa80342938bc"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "6a8386129e6c629378ff5a27e4a0bbc75a703502d852ec475370ba5ceea67c68"
     },
     {
       "id": "EN03",
@@ -671,11 +779,11 @@
       "subtitle": "Wet steps, bellows & the forge",
       "text": "A blacksmith's apprentice accidentally snapped a bride's hairpin, with barely enough time left before the wedding procession. Clutching its box, he ran down the stone street, his shoes splashing through muddy water. Inside the forge, the bellows pumped steadily and the fire crackled higher. His master told him to slow down. He straightened the ornament with small, ringing hammer taps, wound the silver wire back into place, and closed the pliers with a sharp click. Wedding drums drew nearer from the street. He polished the hairpin and returned it before the bridal sedan stopped at the door.",
       "duration": 35.063,
-      "note": "Bellows are supported by mixed-window listening evidence. Some small texture identities remain uncertain beneath the other foreground sounds.",
-      "mix": "media/EN03-mix.mp3",
-      "narration": "media/EN03-narration.mp3",
-      "wav": "media/EN03.wav",
-      "plan": "data/plans/EN03.json",
+      "note": "Wet steps now observed as splashing steps; bellows pumping and fire identified together with clean speech control. Hammer/click/drums remain. Extra polishing and wire-twisting cues are optional rather than mandatory omissions.",
+      "mix": "media/EN03-mix.mp3?v=0a24632fef2f01cd",
+      "narration": "media/EN03-narration.mp3?v=fd84d86ecc788e5a",
+      "wav": "media/EN03.wav?v=0a24632fef2f01cd",
+      "plan": "data/plans/EN03.json?v=0a24632fef2f01cd",
       "events": [
         {
           "id": "e001",
@@ -686,7 +794,9 @@
           "start": 2.192,
           "end": 2.542,
           "start_anchor": "snapped a bride's hairpin",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 2.242,
+          "target_end": 2.542
         },
         {
           "id": "e002",
@@ -697,7 +807,9 @@
           "start": 8.259,
           "end": 11.576,
           "start_anchor": "ran down the stone street, his shoes splashing through muddy water",
-          "end_anchor": "his shoes splashing through muddy water"
+          "end_anchor": "his shoes splashing through muddy water",
+          "target_start": 8.309,
+          "target_end": 11.576
         },
         {
           "id": "e003",
@@ -705,10 +817,12 @@
           "kind": "process",
           "sound": "bellows pumping steadily",
           "voice_text": null,
-          "start": 13.439,
+          "start": 13.389,
           "end": 26.819,
           "start_anchor": "the bellows pumped steadily",
-          "end_anchor": "closed the pliers with a sharp click"
+          "end_anchor": "closed the pliers with a sharp click",
+          "target_start": 13.439,
+          "target_end": 26.819
         },
         {
           "id": "e004",
@@ -719,7 +833,9 @@
           "start": 15.233,
           "end": 26.819,
           "start_anchor": "the fire crackled higher",
-          "end_anchor": "closed the pliers with a sharp click"
+          "end_anchor": "closed the pliers with a sharp click",
+          "target_start": 15.283,
+          "target_end": 26.819
         },
         {
           "id": "e005",
@@ -730,7 +846,9 @@
           "start": 19.489,
           "end": 22.347,
           "start_anchor": "He straightened the ornament with small, ringing hammer taps",
-          "end_anchor": "small, ringing hammer taps"
+          "end_anchor": "small, ringing hammer taps",
+          "target_start": 19.539,
+          "target_end": 22.347
         },
         {
           "id": "e006",
@@ -741,7 +859,9 @@
           "start": 25.144,
           "end": 25.394,
           "start_anchor": "closed the pliers with a sharp click",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 25.194,
+          "target_end": 25.394
         },
         {
           "id": "e007",
@@ -752,10 +872,13 @@
           "start": 27.13,
           "end": 34.163,
           "start_anchor": "Wedding drums drew nearer from the street",
-          "end_anchor": "before the bridal sedan stopped at the door"
+          "end_anchor": "before the bridal sedan stopped at the door",
+          "target_start": 27.18,
+          "target_end": 34.163
         }
       ],
-      "wav_sha256": "fb5e31f3c3411803a85383db7180fe4fdc4c9344859561fbb7ed5d28610d7174"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "0a24632fef2f01cdec02829c4cd6fa70ed8bea7afb6ff797aef3c8ebee3410df"
     },
     {
       "id": "ZH03",
@@ -764,11 +887,11 @@
       "subtitle": "寒夜客栈 · Fire, a falling lid & hurried steps",
       "text": "寒夜客栈住进一队迷路镖师，灶娘桂婶听出后院有人偷翻米缸。她踩过灶前碎柴，咔嚓一声；柴火在锅底噼啪作响，木勺搅汤哗啦转圈。桂婶没有惊动客人，只把铜锅盖轻扣在后门，门一开便当啷坠地。小贼沿湿巷逃跑，脚步啪嗒急促，原来只是饿得发抖的邻村孩子。桂婶给他盛了粥，再请镖师送他回去。",
       "duration": 28.044,
-      "note": "Rummaging uses hands-in-rice Foley. The texture suggests scraping and brushing, but does not uniquely identify a grain container.",
-      "mix": "media/ZH03-mix.mp3",
-      "narration": "media/ZH03-narration.mp3",
-      "wav": "media/ZH03.wav",
-      "plan": "data/plans/ZH03.json",
+      "note": "Dry snap, fire, stirring, two separate lid actions and wet running remain in the plan. Replaced wet steps and lid impact are supported by isolated and mixed evidence. Narration-control false positives prevent treating all listener labels as ground truth.",
+      "mix": "media/ZH03-mix.mp3?v=a760c15811807f7f",
+      "narration": "media/ZH03-narration.mp3?v=b14d59daaacd969f",
+      "wav": "media/ZH03.wav?v=a760c15811807f7f",
+      "plan": "data/plans/ZH03.json?v=a760c15811807f7f",
       "events": [
         {
           "id": "e001",
@@ -779,7 +902,9 @@
           "start": 3.333,
           "end": 7.346,
           "start_anchor": "听出后院有人偷翻米缸",
-          "end_anchor": "踩过灶前碎柴"
+          "end_anchor": "踩过灶前碎柴",
+          "target_start": 3.383,
+          "target_end": 7.346
         },
         {
           "id": "e002",
@@ -790,7 +915,9 @@
           "start": 8.057,
           "end": 8.607,
           "start_anchor": "；柴火在锅底",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 8.107,
+          "target_end": 8.607
         },
         {
           "id": "e003",
@@ -801,7 +928,9 @@
           "start": 8.558,
           "end": 15.954,
           "start_anchor": "柴火在锅底噼啪作响",
-          "end_anchor": "只把铜锅盖轻扣在后门"
+          "end_anchor": "只把铜锅盖轻扣在后门",
+          "target_start": 8.608,
+          "target_end": 15.954
         },
         {
           "id": "e004",
@@ -812,7 +941,9 @@
           "start": 10.679,
           "end": 12.351,
           "start_anchor": "木勺搅汤哗啦转圈",
-          "end_anchor": "木勺搅汤哗啦转圈"
+          "end_anchor": "木勺搅汤哗啦转圈",
+          "target_start": 10.729,
+          "target_end": 12.351
         },
         {
           "id": "e005",
@@ -823,7 +954,9 @@
           "start": 14.202,
           "end": 14.652,
           "start_anchor": "只把铜锅盖轻扣在后门",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 14.252,
+          "target_end": 14.652
         },
         {
           "id": "e006",
@@ -831,10 +964,12 @@
           "kind": "short",
           "sound": "copper lid clattering onto the ground",
           "voice_text": null,
-          "start": 16.635,
+          "start": 16.585,
           "end": 17.835,
           "start_anchor": "门一开便当啷坠地",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 16.635,
+          "target_end": 17.835
         },
         {
           "id": "e007",
@@ -845,10 +980,13 @@
           "start": 18.686,
           "end": 24.441,
           "start_anchor": "小贼沿湿巷逃跑，脚步啪嗒急促",
-          "end_anchor": "原来只是饿得发抖的邻村孩子"
+          "end_anchor": "原来只是饿得发抖的邻村孩子",
+          "target_start": 18.736,
+          "target_end": 24.441
         }
       ],
-      "wav_sha256": "cb764c16d4d87f8527b46f9e4ef53771cc5403cbd3fba3d08c8168f55d52493b"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "a760c15811807f7f3b10f74da20955bf13f6166318de81d6d3909c4e0bba692e"
     },
     {
       "id": "EN05",
@@ -857,11 +995,11 @@
       "subtitle": "Leaves, wooden impacts & the mill",
       "text": "The granary claimed that the watermill had swallowed three sacks of wheat, and its owner could not defend himself. At night he heard the low hum of the millstone spinning empty. He ran along the stone path, dry leaves rustling underfoot. Wind slapped the back window against its frame, while the wooden grain hopper rocked with a soft clunk. He lifted a floorboard; an iron ring rattled against a hidden door, revealing the missing sacks. He beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance. The bookkeeper recognized the hidden flood passage: the wheat had been swept into it by the water.",
       "duration": 38.163,
-      "note": "The mill is presented as a bounded foreground focus, not a claim that the physical mechanism stops. Floorboard contact is a subtle detail.",
-      "mix": "media/EN05-mix.mp3",
-      "narration": "media/EN05-narration.mp3",
-      "wav": "media/EN05.wav",
-      "plan": "data/plans/EN05.json",
+      "note": "Window impacts identified in mixed clip with clean control; hopper has a soft contact and wood friction precedes the iron-ring action. Window reduced to avoid dominating narration. Exact object identity of friction/impact foley remains approximate.",
+      "mix": "media/EN05-mix.mp3?v=ceee7ed5f3f2de38",
+      "narration": "media/EN05-narration.mp3?v=52702fd3222cf148",
+      "wav": "media/EN05.wav?v=ceee7ed5f3f2de38",
+      "plan": "data/plans/EN05.json?v=ceee7ed5f3f2de38",
       "events": [
         {
           "id": "e001",
@@ -872,7 +1010,9 @@
           "start": 7.653,
           "end": 10.002,
           "start_anchor": "low hum of the millstone spinning empty",
-          "end_anchor": "spinning empty"
+          "end_anchor": "spinning empty",
+          "target_start": 7.653,
+          "target_end": 10.002
         },
         {
           "id": "e002",
@@ -880,10 +1020,12 @@
           "kind": "process",
           "sound": "running footsteps on stone path with dry leaves rustling",
           "voice_text": null,
-          "start": 10.564,
+          "start": 10.514,
           "end": 14.705,
           "start_anchor": "ran along the stone path, dry leaves rustling underfoot",
-          "end_anchor": "rustling underfoot"
+          "end_anchor": "rustling underfoot",
+          "target_start": 10.564,
+          "target_end": 14.705
         },
         {
           "id": "e003",
@@ -894,7 +1036,9 @@
           "start": 15.015,
           "end": 17.414,
           "start_anchor": "Wind slapped the back window against its frame",
-          "end_anchor": "against its frame"
+          "end_anchor": "against its frame",
+          "target_start": 15.065,
+          "target_end": 17.414
         },
         {
           "id": "e004",
@@ -902,10 +1046,12 @@
           "kind": "process",
           "sound": "wooden grain hopper rocking with soft clunking sounds",
           "voice_text": null,
-          "start": 18.357,
+          "start": 18.307,
           "end": 20.605,
           "start_anchor": "the wooden grain hopper rocked with a soft clunk",
-          "end_anchor": "soft clunk"
+          "end_anchor": "soft clunk",
+          "target_start": 18.357,
+          "target_end": 20.605
         },
         {
           "id": "e005",
@@ -916,7 +1062,9 @@
           "start": 21.016,
           "end": 22.266,
           "start_anchor": "lifted a floorboard",
-          "end_anchor": null
+          "end_anchor": null,
+          "target_start": 21.066,
+          "target_end": 22.266
         },
         {
           "id": "e006",
@@ -927,7 +1075,9 @@
           "start": 22.518,
           "end": 25.03,
           "start_anchor": "an iron ring rattled against a hidden door",
-          "end_anchor": "hidden door"
+          "end_anchor": "hidden door",
+          "target_start": 22.568,
+          "target_end": 25.03
         },
         {
           "id": "e007",
@@ -938,10 +1088,13 @@
           "start": 27.362,
           "end": 32.118,
           "start_anchor": "beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance",
-          "end_anchor": "village entrance"
+          "end_anchor": "village entrance",
+          "target_start": 27.412,
+          "target_end": 32.118
         }
       ],
-      "wav_sha256": "5fe6b4258a42b3f4360f5d92368093756e51e75f4cf9fe62d8c3c4f4c7d70d14"
+      "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+      "wav_sha256": "ceee7ed5f3f2de38dead29312c45d1a80e32159b6fb7eedec60e8026460352c8"
     }
   ]
 }

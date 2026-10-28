@@ -5,11 +5,11 @@
   "subtitle": "寒夜客栈 · Fire, a falling lid & hurried steps",
   "text": "寒夜客栈住进一队迷路镖师，灶娘桂婶听出后院有人偷翻米缸。她踩过灶前碎柴，咔嚓一声；柴火在锅底噼啪作响，木勺搅汤哗啦转圈。桂婶没有惊动客人，只把铜锅盖轻扣在后门，门一开便当啷坠地。小贼沿湿巷逃跑，脚步啪嗒急促，原来只是饿得发抖的邻村孩子。桂婶给他盛了粥，再请镖师送他回去。",
   "duration": 28.044,
-  "note": "Rummaging uses hands-in-rice Foley. The texture suggests scraping and brushing, but does not uniquely identify a grain container.",
-  "mix": "media/ZH03-mix.mp3",
-  "narration": "media/ZH03-narration.mp3",
-  "wav": "media/ZH03.wav",
-  "plan": "data/plans/ZH03.json",
+  "note": "Dry snap, fire, stirring, two separate lid actions and wet running remain in the plan. Replaced wet steps and lid impact are supported by isolated and mixed evidence. Narration-control false positives prevent treating all listener labels as ground truth.",
+  "mix": "media/ZH03-mix.mp3?v=a760c15811807f7f",
+  "narration": "media/ZH03-narration.mp3?v=b14d59daaacd969f",
+  "wav": "media/ZH03.wav?v=a760c15811807f7f",
+  "plan": "data/plans/ZH03.json?v=a760c15811807f7f",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 3.333,
       "end": 7.346,
       "start_anchor": "听出后院有人偷翻米缸",
-      "end_anchor": "踩过灶前碎柴"
+      "end_anchor": "踩过灶前碎柴",
+      "target_start": 3.383,
+      "target_end": 7.346
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 8.057,
       "end": 8.607,
       "start_anchor": "；柴火在锅底",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 8.107,
+      "target_end": 8.607
     },
     {
       "id": "e003",
@@ -42,7 +46,9 @@
       "start": 8.558,
       "end": 15.954,
       "start_anchor": "柴火在锅底噼啪作响",
-      "end_anchor": "只把铜锅盖轻扣在后门"
+      "end_anchor": "只把铜锅盖轻扣在后门",
+      "target_start": 8.608,
+      "target_end": 15.954
     },
     {
       "id": "e004",
@@ -53,7 +59,9 @@
       "start": 10.679,
       "end": 12.351,
       "start_anchor": "木勺搅汤哗啦转圈",
-      "end_anchor": "木勺搅汤哗啦转圈"
+      "end_anchor": "木勺搅汤哗啦转圈",
+      "target_start": 10.729,
+      "target_end": 12.351
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 14.202,
       "end": 14.652,
       "start_anchor": "只把铜锅盖轻扣在后门",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 14.252,
+      "target_end": 14.652
     },
     {
       "id": "e006",
@@ -72,10 +82,12 @@
       "kind": "short",
       "sound": "copper lid clattering onto the ground",
       "voice_text": null,
-      "start": 16.635,
+      "start": 16.585,
       "end": 17.835,
       "start_anchor": "门一开便当啷坠地",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 16.635,
+      "target_end": 17.835
     },
     {
       "id": "e007",
@@ -86,8 +98,11 @@
       "start": 18.686,
       "end": 24.441,
       "start_anchor": "小贼沿湿巷逃跑，脚步啪嗒急促",
-      "end_anchor": "原来只是饿得发抖的邻村孩子"
+      "end_anchor": "原来只是饿得发抖的邻村孩子",
+      "target_start": 18.736,
+      "target_end": 24.441
     }
   ],
-  "wav_sha256": "cb764c16d4d87f8527b46f9e4ef53771cc5403cbd3fba3d08c8168f55d52493b"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "a760c15811807f7f3b10f74da20955bf13f6166318de81d6d3909c4e0bba692e"
 }

@@ -2,9 +2,13 @@
 
 Public demo display of these excerpts was authorized by the project owner on 2026-10-28. This does not grant visitors unrestricted redistribution, commercial use, or rights in reference voices, narrative text, or third-party recordings.
 
-## ZH04 — Shelter at the Mountain Shrine
+## Latest release — 2026-10-28, v8
 
-Contains an adapted excerpt of **Muntjac HQ 1.ogg**, by **Jidanni**.
+This release uses a generated AudioX animal cue in ZH04, not the field recording used in the initial website release. Exact animal species is not independently established.
+
+## Historical release attribution
+
+The initial website commit (02778f8), still present in repository history, contains an adapted excerpt of **Muntjac HQ 1.ogg**, by **Jidanni**, in ZH04. The following attribution applies to that historical audio, not to the replacement cue in v8.
 
 - Source: https://commons.wikimedia.org/wiki/File:Muntjac_HQ_1.ogg
 - License: Creative Commons Attribution-ShareAlike 4.0 International, https://creativecommons.org/licenses/by-sa/4.0/
@@ -13,7 +17,7 @@ Contains an adapted excerpt of **Muntjac HQ 1.ogg**, by **Jidanni**.
 
 ## Other material
 
-The mixes use retrieved Foley, generated effects, and synthesized narration. ZH03 includes FoleySet recording 09536.wav (catalog description: hands using rice to imitate walking in sand). The local catalog lacks per-recording author/license fields; the project owner's public-display authorization is recorded, but no blanket downstream license is asserted. Retain original provider terms for other material.
+The current mixes use MMAudio and AudioX generated effects, retrieved FoleySet recordings, and synthesized narration. The initial ZH03 hands-in-rice cue has been replaced. The local Foley catalog lacks per-recording author/license fields; the project owner's public-display authorization is recorded, but no blanket downstream license is asserted. Retain original provider terms for other material.
 
 ## Review and provenance
 

@@ -5,11 +5,11 @@
   "subtitle": "印坊 · A press, scattered paper & a warning",
   "text": "印坊赶制赈灾告示，学徒小泉却听见压版机每转一圈都发出异样的嘎哒声。他沿长桌走过去，木地板咚咚回响，掀起纸堆时纸页哗啦散开。砚台被人推落，啪地碎成两半，他在碎片下找到调换的铜字。院里驴车铃声已响，押运人催着发车。小泉喊停师傅，用木槌逐字敲回正确版面，滚筒重新吱呀转起时，百姓看见的才是真正的放粮日期。",
   "duration": 30.496,
-  "note": "The added warning voice is brief; its separation from the narrator remains limited. The press can compete slightly with narration.",
-  "mix": "media/ZH02-mix.mp3",
-  "narration": "media/ZH02-narration.mp3",
-  "wav": "media/ZH02.wav",
-  "plan": "data/plans/ZH02.json",
+  "note": "Rhythmic press, steps, rustling paper, bells and roller friction are supported by source and mixed observations. A narration-only bell false positive is retained and weakens that individual model statement; source-only jingling provides separate support.",
+  "mix": "media/ZH02-mix.mp3?v=6a8386129e6c6293",
+  "narration": "media/ZH02-narration.mp3?v=25422c31c47ee00b",
+  "wav": "media/ZH02.wav?v=6a8386129e6c6293",
+  "plan": "data/plans/ZH02.json?v=6a8386129e6c6293",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 3.242,
       "end": 22.397,
       "start_anchor": "压版机每转一圈都发出异样的嘎哒声",
-      "end_anchor": "小泉喊停师傅"
+      "end_anchor": "小泉喊停师傅",
+      "target_start": 3.242,
+      "target_end": 22.397
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 6.395,
       "end": 9.167,
       "start_anchor": "沿长桌走过去",
-      "end_anchor": "木地板咚咚回响"
+      "end_anchor": "木地板咚咚回响",
+      "target_start": 6.445,
+      "target_end": 9.167
     },
     {
       "id": "e003",
@@ -39,10 +43,12 @@
       "kind": "process",
       "sound": "paper sheets rustling and scattering",
       "voice_text": null,
-      "start": 9.597,
+      "start": 9.647,
       "end": 11.529,
       "start_anchor": "掀起纸堆时",
-      "end_anchor": "纸页哗啦散开"
+      "end_anchor": "纸页哗啦散开",
+      "target_start": 9.647,
+      "target_end": 11.529
     },
     {
       "id": "e004",
@@ -53,7 +59,9 @@
       "start": 12.116,
       "end": 13.666,
       "start_anchor": "啪地碎成两半",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 13.13,
+      "target_end": 14.63
     },
     {
       "id": "e005",
@@ -64,7 +72,9 @@
       "start": 17.243,
       "end": 20.175,
       "start_anchor": "院里驴车铃声已响",
-      "end_anchor": "押运人催着发车"
+      "end_anchor": "押运人催着发车",
+      "target_start": 17.293,
+      "target_end": 20.175
     },
     {
       "id": "e006",
@@ -75,7 +85,9 @@
       "start": 22.517,
       "end": 22.912,
       "start_anchor": "小泉喊停师傅",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 22.537,
+      "target_end": 22.9317
     },
     {
       "id": "e007",
@@ -86,7 +98,9 @@
       "start": 23.002,
       "end": 24.533,
       "start_anchor": "用木槌逐字敲回正确版面",
-      "end_anchor": "敲回正确版面"
+      "end_anchor": "敲回正确版面",
+      "target_start": 23.0517,
+      "target_end": 24.5327
     },
     {
       "id": "e008",
@@ -97,8 +111,11 @@
       "start": 24.983,
       "end": 29.996,
       "start_anchor": "滚筒重新吱呀转起时",
-      "end_anchor": "才是真正的放粮日期"
+      "end_anchor": "才是真正的放粮日期",
+      "target_start": 25.0327,
+      "target_end": 29.9965
     }
   ],
-  "wav_sha256": "cebc6d46c74a726bf150295621159cba313c178ba77ce6086d6daa80342938bc"
+  "review_status": "PROVISIONALLY_ACCEPTABLE_NOT_HUMAN_CERTIFIED",
+  "wav_sha256": "6a8386129e6c629378ff5a27e4a0bbc75a703502d852ec475370ba5ceea67c68"
 }

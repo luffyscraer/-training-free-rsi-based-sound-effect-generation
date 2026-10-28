@@ -5,11 +5,11 @@
   "subtitle": "画师与卷轴 · Window impact, rain & unfurling cloth",
   "text": "山祠里寄住的画师怕雨毁了新画，抱卷轴跑过石阶，鞋跟嗒嗒响。风撞开木窗，窗扇砰地拍墙，雨水沙沙扫过纸屏。他请守祠老人帮忙压住画角，老人用铜镇纸叮地落案。两人卷起画布时，绢面呼啦收拢，露出画背写着的失散名单。老人认出其中一位是自己的女儿，决定天一亮便下山打听，不再独自守着空殿。",
   "duration": 26.802,
-  "note": "Listen for the window impact, paperweight, and canvas against the rain. A separate wind or hinge track is not assumed necessary for the same action.",
-  "mix": "media/ZH05-mix.mp3",
-  "narration": "media/ZH05-narration.mp3",
-  "wav": "media/ZH05.wav",
-  "plan": "data/plans/ZH05.json",
+  "note": "Steps, window impact, rain and cloth have supporting source/mixed evidence. Metal contact exists at corrected 14.412-second anchor, but local mixed listening cannot reliably identify it despite source changes and format control. Final perceptual acceptance is withheld.",
+  "mix": "media/ZH05-mix.mp3?v=1f69c5998c878f1a",
+  "narration": "media/ZH05-narration.mp3?v=2d4b5ed8427767db",
+  "wav": "media/ZH05.wav?v=1f69c5998c878f1a",
+  "plan": "data/plans/ZH05.json?v=1f69c5998c878f1a",
   "events": [
     {
       "id": "e001",
@@ -20,7 +20,9 @@
       "start": 2.952,
       "end": 5.785,
       "start_anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
-      "end_anchor": "鞋跟嗒嗒响"
+      "end_anchor": "鞋跟嗒嗒响",
+      "target_start": 3.002,
+      "target_end": 5.785
     },
     {
       "id": "e002",
@@ -31,7 +33,9 @@
       "start": 7.636,
       "end": 9.186,
       "start_anchor": "窗扇砰地拍墙",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 7.686,
+      "target_end": 9.186
     },
     {
       "id": "e003",
@@ -39,10 +43,12 @@
       "kind": "process",
       "sound": "rain sweeping across paper screen",
       "voice_text": null,
-      "start": 9.158,
+      "start": 9.208,
       "end": 26.302,
       "start_anchor": "雨水沙沙扫过纸屏",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 9.208,
+      "target_end": 26.3019
     },
     {
       "id": "e004",
@@ -50,10 +56,12 @@
       "kind": "short",
       "sound": "bronze paperweight dropping onto table",
       "voice_text": null,
-      "start": 13.421,
-      "end": 14.471,
-      "start_anchor": "老人用铜镇纸叮地落案",
-      "end_anchor": null
+      "start": 14.362,
+      "end": 15.412,
+      "start_anchor": "叮地落案",
+      "end_anchor": null,
+      "target_start": 14.412,
+      "target_end": 15.412
     },
     {
       "id": "e005",
@@ -64,8 +72,11 @@
       "start": 17.064,
       "end": 17.914,
       "start_anchor": "绢面呼啦收拢",
-      "end_anchor": null
+      "end_anchor": null,
+      "target_start": 17.114,
+      "target_end": 17.914
     }
   ],
-  "wav_sha256": "b38a7316eb00f5062275685c72dccaddc0793342a93700e3d0cd0f70b413d8f3"
+  "review_status": "NEEDS_HUMAN_LISTENING",
+  "wav_sha256": "1f69c5998c878f1ab55516d11dc8221069b9029952c1cfb6063ea8dd2dc1d6fb"
 }
