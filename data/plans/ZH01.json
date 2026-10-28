@@ -1,0 +1,115 @@
+{
+  "id": "ZH01",
+  "language": "zh",
+  "title": "The Floodgate",
+  "subtitle": "守闸 · Stone, chains & rushing water",
+  "text": "暴雨将至，守闸的顾七发现上游水位突然涨过红线。他踩着石阶跑进闸房，鞋底啪嗒作响；檐角的雨珠滴进铜盆，叮叮连响。顾七拽动铁链，链环哗啦碰撞，沉重闸板却只挪了一寸。他叫徒弟敲响岸边铜锣，村人推着木车沿堤赶来，车轮吱呀滚过碎石。众人合力清出卡住闸槽的断木，水终于轰地冲向备用河道，低处的屋舍保住了。",
+  "duration": 31.121,
+  "note": "The opening atmosphere is an optional audiobook bed. Timber friction is audible in context, but exact object identity remains uncertain.",
+  "mix": "media/ZH01-mix.mp3",
+  "narration": "media/ZH01-narration.mp3",
+  "wav": "media/ZH01.wav",
+  "plan": "data/plans/ZH01.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "暴雨将至",
+      "kind": "bed",
+      "sound": "impending storm atmosphere",
+      "voice_text": null,
+      "start": 0.0,
+      "end": 30.621,
+      "start_anchor": "暴雨将至",
+      "end_anchor": null
+    },
+    {
+      "id": "e002",
+      "anchor": "踩着石阶跑进闸房，鞋底啪嗒作响",
+      "kind": "process",
+      "sound": "footsteps slapping on stone steps",
+      "voice_text": null,
+      "start": 4.993,
+      "end": 7.945,
+      "start_anchor": "踩着石阶跑进闸房",
+      "end_anchor": "鞋底啪嗒作响"
+    },
+    {
+      "id": "e003",
+      "anchor": "檐角的雨珠滴进铜盆，叮叮连响",
+      "kind": "process",
+      "sound": "raindrops pinging into a copper basin",
+      "voice_text": null,
+      "start": 8.516,
+      "end": 10.887,
+      "start_anchor": "檐角的雨珠滴进铜盆",
+      "end_anchor": "叮叮连响"
+    },
+    {
+      "id": "e004",
+      "anchor": "拽动铁链，链环哗啦碰撞",
+      "kind": "process",
+      "sound": "iron chain links clattering",
+      "voice_text": null,
+      "start": 11.298,
+      "end": 15.931,
+      "start_anchor": "顾七拽动铁链",
+      "end_anchor": "沉重闸板却只挪了一寸"
+    },
+    {
+      "id": "e005",
+      "anchor": "沉重闸板却只挪了一寸",
+      "kind": "short",
+      "sound": "heavy wooden gate scraping slightly",
+      "voice_text": null,
+      "start": 14.02,
+      "end": 14.576,
+      "start_anchor": "沉重闸板却只挪了一寸",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "敲响岸边铜锣",
+      "kind": "process",
+      "sound": "copper gong being struck repeatedly",
+      "voice_text": null,
+      "start": 18.202,
+      "end": 21.252,
+      "start_anchor": "敲响岸边铜锣",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "村人推着木车沿堤赶来，车轮吱呀滚过碎石",
+      "kind": "process",
+      "sound": "wooden cart wheels creaking over gravel",
+      "voice_text": null,
+      "start": 20.134,
+      "end": 23.796,
+      "start_anchor": "村人推着木车沿堤赶来",
+      "end_anchor": "车轮吱呀滚过碎石"
+    },
+    {
+      "id": "e008",
+      "anchor": "众人合力清出卡住闸槽的断木",
+      "kind": "short",
+      "sound": "broken wood being pulled out of a slot",
+      "voice_text": null,
+      "start": 24.527,
+      "end": 26.577,
+      "start_anchor": "众人合力清出卡住闸槽的断木",
+      "end_anchor": null
+    },
+    {
+      "id": "e009",
+      "anchor": "水终于轰地冲向备用河道",
+      "kind": "process",
+      "sound": "massive water rushing into channel",
+      "voice_text": null,
+      "start": 27.138,
+      "end": 30.621,
+      "start_anchor": "水终于轰地冲向备用河道",
+      "end_anchor": "低处的屋舍保住了"
+    }
+  ],
+  "wav_sha256": "125a3d1b17e00edc8bce0c08b88dcbed9b062e6b09e3e292afdbe5d6af82d8de"
+}

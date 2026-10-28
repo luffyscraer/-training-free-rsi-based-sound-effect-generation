@@ -1,0 +1,93 @@
+{
+  "id": "EN02",
+  "language": "en",
+  "title": "A Warning in the Print Shop",
+  "subtitle": "Mechanical rhythm & a spoken intervention",
+  "text": "A troupe wanted new songbooks printed, but the printshop owner saw that the leading character's name kept coming out crooked. She tapped the copper plate lightly on the desk; a bright ding revealed a thin thread in its seam. Night rain rustled across the roof tiles outside. Someone fled through puddles by the back door, wet footsteps fading away, and the wooden latch rattled against the frame. At the mouth of the alley she heard the candyman striking his small copper gong and asked him to stop the fugitive. She tore open the recovered paper packet with a rustle. Inside were the old lyrics: someone had feared the new play would expose a long-ago impersonation.",
+  "duration": 40.244,
+  "note": "The copper tap and its resonance are treated as one event. An added short voice performance is omitted from the narration-only reference.",
+  "mix": "media/EN02-mix.mp3",
+  "narration": "media/EN02-narration.mp3",
+  "wav": "media/EN02.wav",
+  "plan": "data/plans/EN02.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "tapped the copper plate lightly on the desk; a bright ding",
+      "kind": "short",
+      "sound": "copper plate tapping on desk with a bright metallic ding",
+      "voice_text": null,
+      "start": 6.031,
+      "end": 6.887,
+      "start_anchor": "tapped the copper plate lightly on the desk; a bright ding",
+      "end_anchor": null
+    },
+    {
+      "id": "e002",
+      "anchor": "Night rain rustled across the roof tiles outside",
+      "kind": "bed",
+      "sound": "rain falling on roof tiles",
+      "voice_text": null,
+      "start": 11.093,
+      "end": 26.373,
+      "start_anchor": "Night rain rustled across the roof tiles outside",
+      "end_anchor": "asked him to stop the fugitive"
+    },
+    {
+      "id": "e003",
+      "anchor": "fled through puddles by the back door, wet footsteps fading away",
+      "kind": "process",
+      "sound": "wet footsteps splashing through puddles and fading",
+      "voice_text": null,
+      "start": 14.812,
+      "end": 18.273,
+      "start_anchor": "fled through puddles by the back door, wet footsteps fading away",
+      "end_anchor": "wet footsteps fading away"
+    },
+    {
+      "id": "e004",
+      "anchor": "the wooden latch rattled against the frame",
+      "kind": "process",
+      "sound": "wooden latch rattling against door frame",
+      "voice_text": null,
+      "start": 18.845,
+      "end": 20.621,
+      "start_anchor": "the wooden latch rattled against the frame",
+      "end_anchor": "the wooden latch rattled against the frame"
+    },
+    {
+      "id": "e005",
+      "anchor": "the candyman striking his small copper gong",
+      "kind": "process",
+      "sound": "small copper gong being struck repeatedly",
+      "voice_text": null,
+      "start": 22.415,
+      "end": 26.373,
+      "start_anchor": "the candyman striking his small copper gong",
+      "end_anchor": "asked him to stop the fugitive"
+    },
+    {
+      "id": "e006",
+      "anchor": "asked him to stop the fugitive",
+      "kind": "voice",
+      "sound": "Voice: Stop the fugitive!",
+      "voice_text": "Stop the fugitive!",
+      "start": 26.423,
+      "end": 29.547,
+      "start_anchor": "asked him to stop the fugitive",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "tore open the recovered paper packet with a rustle",
+      "kind": "process",
+      "sound": "paper packet being torn open with a continuous rustling sound",
+      "voice_text": null,
+      "start": 30.418,
+      "end": 33.637,
+      "start_anchor": "tore open the recovered paper packet with a rustle",
+      "end_anchor": "tore open the recovered paper packet with a rustle"
+    }
+  ],
+  "wav_sha256": "b608109a3a05c0094809ddc3170b6cce076b29c5db185fb5d0923fa4781193a3"
+}

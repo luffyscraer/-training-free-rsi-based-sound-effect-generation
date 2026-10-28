@@ -1,0 +1,93 @@
+{
+  "id": "ZH04",
+  "language": "zh",
+  "title": "Shelter at the Mountain Shrine",
+  "subtitle": "山祠避雨 · Thunder, dripping water & distant bells",
+  "text": "山祠外雷声滚过，采药人叶青扶着受伤的樵夫避进殿里，草鞋在泥地上啪嗒作响。漏雨从瓦缝滴进陶钵，嗒嗒不停；她掀开旧帘，布面哗啦抖出积尘。祠后忽然传来鹿的短鸣，叶青循着声音找到干草和净水，木桶碰井沿咚的一声。她替樵夫包好脚踝，等山路上的驮队铜铃靠近，才将人交给熟识的赶路人。",
+  "duration": 28.149,
+  "note": "Layered dripping continues beneath brief events. The animal call, bucket impact, and approaching bells were checked in their mixed context against a narration reference.",
+  "mix": "media/ZH04-mix.mp3",
+  "narration": "media/ZH04-narration.mp3",
+  "wav": "media/ZH04.wav",
+  "plan": "data/plans/ZH04.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "山祠外雷声滚过",
+      "kind": "short",
+      "sound": "thunder rolling",
+      "voice_text": null,
+      "start": 0.03,
+      "end": 3.08,
+      "start_anchor": "山祠外雷声滚过",
+      "end_anchor": null
+    },
+    {
+      "id": "e002",
+      "anchor": "草鞋在泥地上啪嗒作响",
+      "kind": "process",
+      "sound": "straw sandals slapping on muddy ground",
+      "voice_text": null,
+      "start": 2.131,
+      "end": 7.762,
+      "start_anchor": "采药人叶青扶着受伤的樵夫避进殿里，草鞋在泥地上啪嗒作响",
+      "end_anchor": "草鞋在泥地上啪嗒作响"
+    },
+    {
+      "id": "e003",
+      "anchor": "漏雨从瓦缝滴进陶钵，嗒嗒不停",
+      "kind": "process",
+      "sound": "rainwater dripping into a clay bowl",
+      "voice_text": null,
+      "start": 7.842,
+      "end": 27.649,
+      "start_anchor": "漏雨从瓦缝滴进陶钵",
+      "end_anchor": null
+    },
+    {
+      "id": "e004",
+      "anchor": "掀开旧帘，布面哗啦抖出积尘",
+      "kind": "process",
+      "sound": "old cloth curtain being shaken with rustling sound",
+      "voice_text": null,
+      "start": 11.434,
+      "end": 14.204,
+      "start_anchor": "她掀开旧帘",
+      "end_anchor": "布面哗啦抖出积尘"
+    },
+    {
+      "id": "e005",
+      "anchor": "祠后忽然传来鹿的短鸣",
+      "kind": "short",
+      "sound": "deer short cry",
+      "voice_text": null,
+      "start": 15.115,
+      "end": 16.365,
+      "start_anchor": "祠后忽然传来鹿的短鸣",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "木桶碰井沿咚的一声",
+      "kind": "short",
+      "sound": "wooden bucket hitting stone well rim",
+      "voice_text": null,
+      "start": 19.596,
+      "end": 20.446,
+      "start_anchor": "木桶碰井沿咚的一声",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "驮队铜铃靠近",
+      "kind": "process",
+      "sound": "pack mule team copper bells jingling while approaching",
+      "voice_text": null,
+      "start": 23.637,
+      "end": 27.649,
+      "start_anchor": "等山路上的驮队铜铃靠近",
+      "end_anchor": "才将人交给熟识的赶路人"
+    }
+  ],
+  "wav_sha256": "9c1464c21b4b75ba334b9d8e96e85f3d3980fe2f6478e37235c58a42c1ca39f0"
+}

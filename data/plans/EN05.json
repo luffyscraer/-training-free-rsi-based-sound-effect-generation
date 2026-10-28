@@ -1,0 +1,93 @@
+{
+  "id": "EN05",
+  "language": "en",
+  "title": "Sacks at the Watermill",
+  "subtitle": "Leaves, wooden impacts & the mill",
+  "text": "The granary claimed that the watermill had swallowed three sacks of wheat, and its owner could not defend himself. At night he heard the low hum of the millstone spinning empty. He ran along the stone path, dry leaves rustling underfoot. Wind slapped the back window against its frame, while the wooden grain hopper rocked with a soft clunk. He lifted a floorboard; an iron ring rattled against a hidden door, revealing the missing sacks. He beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance. The bookkeeper recognized the hidden flood passage: the wheat had been swept into it by the water.",
+  "duration": 38.163,
+  "note": "The mill is presented as a bounded foreground focus, not a claim that the physical mechanism stops. Floorboard contact is a subtle detail.",
+  "mix": "media/EN05-mix.mp3",
+  "narration": "media/EN05-narration.mp3",
+  "wav": "media/EN05.wav",
+  "plan": "data/plans/EN05.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "low hum of the millstone spinning empty",
+      "kind": "process",
+      "sound": "millstone spinning with a low hum",
+      "voice_text": null,
+      "start": 7.653,
+      "end": 10.002,
+      "start_anchor": "low hum of the millstone spinning empty",
+      "end_anchor": "spinning empty"
+    },
+    {
+      "id": "e002",
+      "anchor": "ran along the stone path, dry leaves rustling underfoot",
+      "kind": "process",
+      "sound": "running footsteps on stone path with dry leaves rustling",
+      "voice_text": null,
+      "start": 10.564,
+      "end": 14.705,
+      "start_anchor": "ran along the stone path, dry leaves rustling underfoot",
+      "end_anchor": "rustling underfoot"
+    },
+    {
+      "id": "e003",
+      "anchor": "Wind slapped the back window against its frame",
+      "kind": "process",
+      "sound": "window repeatedly slapping against its frame in the wind",
+      "voice_text": null,
+      "start": 15.015,
+      "end": 17.414,
+      "start_anchor": "Wind slapped the back window against its frame",
+      "end_anchor": "against its frame"
+    },
+    {
+      "id": "e004",
+      "anchor": "wooden grain hopper rocked with a soft clunk",
+      "kind": "process",
+      "sound": "wooden grain hopper rocking with soft clunking sounds",
+      "voice_text": null,
+      "start": 18.357,
+      "end": 20.605,
+      "start_anchor": "the wooden grain hopper rocked with a soft clunk",
+      "end_anchor": "soft clunk"
+    },
+    {
+      "id": "e005",
+      "anchor": "lifted a floorboard",
+      "kind": "short",
+      "sound": "wooden floorboard being pried up",
+      "voice_text": null,
+      "start": 21.016,
+      "end": 22.266,
+      "start_anchor": "lifted a floorboard",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "an iron ring rattled against a hidden door",
+      "kind": "process",
+      "sound": "iron ring rattling against a wooden door",
+      "voice_text": null,
+      "start": 22.518,
+      "end": 25.03,
+      "start_anchor": "an iron ring rattled against a hidden door",
+      "end_anchor": "hidden door"
+    },
+    {
+      "id": "e007",
+      "anchor": "beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance",
+      "kind": "process",
+      "sound": "rhythmic knocking of a wooden clapper",
+      "voice_text": null,
+      "start": 27.362,
+      "end": 32.118,
+      "start_anchor": "beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance",
+      "end_anchor": "village entrance"
+    }
+  ],
+  "wav_sha256": "5fe6b4258a42b3f4360f5d92368093756e51e75f4cf9fe62d8c3c4f4c7d70d14"
+}

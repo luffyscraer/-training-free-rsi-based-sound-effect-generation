@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Training-free RSI-based Sound Effect Generation: bilingual audiobook excerpts with narration, sound design, and inspectable event timelines.">
+  <meta name="theme-color" content="#f8f7f3">
+  <title>Training-free RSI-based Sound Effect Generation</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#demos">Skip to audio demos</a>
+  <header class="topbar"><a class="brand" href="#">RSI <span>/ Sound Effects</span></a><nav aria-label="Main"><a href="#demos">Listen</a><a href="#method">Method</a><a href="#notes">Notes</a></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">AUDIOBOOK SOUND DESIGN · RESEARCH DEMO</p>
+      <h1 id="title">Training-free RSI-based<br><span>Sound Effect Generation</span></h1>
+      <p class="lead">From written stories to layered listening.<br>Plan, render, review, and refine sound effects—without updating model weights.</p>
+      <p class="byline"><a href="https://github.com/luffyscraer">luffyscraer</a> <span>·</span> Chinese &amp; English excerpts</p>
+      <div class="hero-actions"><a class="button primary" href="#demos">Explore the audio <span aria-hidden="true">↓</span></a><a class="button" href="data/cases.json" download>Event plans <span aria-hidden="true">↗</span></a></div>
+      <div class="strip"><span><b>10</b> curated excerpts</span><span><b>2</b> languages</span><span><b>71</b> planned events</span><span><b>0</b> weight updates</span></div>
+    </section>
+
+    <section id="demos" class="section" aria-labelledby="demos-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / LISTEN &amp; COMPARE</p><h2 id="demos-title">Stories you can hear.</h2></div><p>Headphones recommended.<br>Full excerpts, not best-sounding crops.</p></div>
+      <div class="demo-toolbar"><div class="filters" role="group" aria-label="Filter demos by language"><button type="button" data-filter="all" aria-pressed="true">All excerpts</button><button type="button" data-filter="zh" aria-pressed="false">中文</button><button type="button" data-filter="en" aria-pressed="false">English</button></div><span id="result-count" role="status" aria-live="polite">Loading excerpts…</span></div>
+      <p class="guide">Compare the <strong>final sound design</strong> with <strong>narration only</strong>, matched to the same timing. Open an event plan to jump to a sound. The narration reference is not an RSI ablation.</p>
+      <div id="demo-list"></div>
+      <noscript><p>This page needs JavaScript to display the audio collection. You can <a href="data/cases.json">download the event index</a> or browse the <a href="media/">audio directory</a>.</p></noscript>
+    </section>
+
+    <section id="method" class="section method" aria-labelledby="method-title">
+      <p class="eyebrow">02 / THE APPROACH</p><h2 id="method-title">Refine the plan. Keep the story.</h2>
+      <p class="section-intro">An iterative audiobook sound-design pipeline separates what should be heard from when and how it should be rendered. RSI is implemented through reusable experience and prompt refinement, not model-weight training.</p>
+      <ol class="pipeline"><li><span>01</span><h3>Plan events</h3><p>Ground sound effects and brief vocal performances in the original text.</p></li><li><span>02</span><h3>Place &amp; render</h3><p>Align text anchors, select or generate audio, then mix it with narration.</p></li><li><span>03</span><h3>Review &amp; repair</h3><p>Check text coverage and listening evidence; revise the relevant plan, material, or mix.</p></li><li><span>04</span><h3>Retain experience</h3><p>Record failures and corrections as candidate experience for human review and later reuse.</p></li></ol>
+      <div class="method-foot"><span class="loop-icon" aria-hidden="true">↺</span><p><strong>A feedback loop, not a one-pass claim.</strong> These selected versions include iterative repairs and Codex-assisted adjudication. Experience from this collection is pending human approval for RSI promotion.</p></div>
+    </section>
+
+    <section id="notes" class="section notes" aria-labelledby="notes-title">
+      <p class="eyebrow">03 / REPRODUCIBILITY &amp; CREDITS</p><h2 id="notes-title">What this demo shows.</h2>
+      <div class="notes-grid"><div><h3>Qualitative examples</h3><p>Ten selected complete excerpts demonstrate continuous sounds, brief events, and layered narration. English examples are translated passages. This collection is not a controlled benchmark, a measured perceptual-accuracy result, or a with/without-RSI experiment.</p><p>Cloud listening reports were reviewed alongside source text, plans, alignment, and execution evidence. They did not unanimously mark these mixes PASS; remaining limitations are disclosed with each sample. No direct human listening study is claimed.</p></div><div><h3>Audio &amp; implementation</h3><p>These runs used Qwen cloud planning and Qwen Omni listening evaluation, IndexTTS2 narration, and retrieved/generated effects. Browser players use MP3 listening copies; WAV downloads preserve the selected mixes. Event time ranges come from rendered track placement, not measured perceptual onsets.</p><p>Public demo authorization was confirmed by the project owner. Third-party rights remain with their respective holders; this is not a blanket license for downstream reuse. See <a href="ATTRIBUTION.md">audio attribution and usage notes</a>.</p></div></div>
+      <details class="reference-note"><summary>Related project pages</summary><p>For related audio-generation demos, visit <a href="https://audiogenie.github.io/">AudioGenie</a>, <a href="https://dopamine-audiobook.github.io/">Dopamine Audiobook</a>, <a href="https://audio-agi.github.io/WavJourney_demopage/">WavJourney</a>, and <a href="https://riddae.github.io/AuDirector_demopage/">AuDirector</a>. This page is an independent implementation; it does not reproduce their results or claim affiliation.</p></details>
+    </section>
+  </main>
+  <footer><span>Training-free RSI-based Sound Effect Generation</span><a href="#">Back to top ↑</a></footer>
+</body>
+</html>

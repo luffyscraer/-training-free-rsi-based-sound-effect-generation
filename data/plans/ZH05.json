@@ -1,0 +1,71 @@
+{
+  "id": "ZH05",
+  "language": "zh",
+  "title": "The Painter’s Scroll",
+  "subtitle": "画师与卷轴 · Window impact, rain & unfurling cloth",
+  "text": "山祠里寄住的画师怕雨毁了新画，抱卷轴跑过石阶，鞋跟嗒嗒响。风撞开木窗，窗扇砰地拍墙，雨水沙沙扫过纸屏。他请守祠老人帮忙压住画角，老人用铜镇纸叮地落案。两人卷起画布时，绢面呼啦收拢，露出画背写着的失散名单。老人认出其中一位是自己的女儿，决定天一亮便下山打听，不再独自守着空殿。",
+  "duration": 26.802,
+  "note": "Listen for the window impact, paperweight, and canvas against the rain. A separate wind or hinge track is not assumed necessary for the same action.",
+  "mix": "media/ZH05-mix.mp3",
+  "narration": "media/ZH05-narration.mp3",
+  "wav": "media/ZH05.wav",
+  "plan": "data/plans/ZH05.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
+      "kind": "process",
+      "sound": "running footsteps with heels clicking on stone steps",
+      "voice_text": null,
+      "start": 2.952,
+      "end": 5.785,
+      "start_anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
+      "end_anchor": "鞋跟嗒嗒响"
+    },
+    {
+      "id": "e002",
+      "anchor": "风撞开木窗，窗扇砰地拍墙",
+      "kind": "short",
+      "sound": "wooden window banging against wall",
+      "voice_text": null,
+      "start": 7.636,
+      "end": 9.186,
+      "start_anchor": "窗扇砰地拍墙",
+      "end_anchor": null
+    },
+    {
+      "id": "e003",
+      "anchor": "雨水沙沙扫过纸屏",
+      "kind": "process",
+      "sound": "rain sweeping across paper screen",
+      "voice_text": null,
+      "start": 9.158,
+      "end": 26.302,
+      "start_anchor": "雨水沙沙扫过纸屏",
+      "end_anchor": null
+    },
+    {
+      "id": "e004",
+      "anchor": "铜镇纸叮地落案",
+      "kind": "short",
+      "sound": "bronze paperweight dropping onto table",
+      "voice_text": null,
+      "start": 13.421,
+      "end": 14.471,
+      "start_anchor": "老人用铜镇纸叮地落案",
+      "end_anchor": null
+    },
+    {
+      "id": "e005",
+      "anchor": "绢面呼啦收拢",
+      "kind": "short",
+      "sound": "silk canvas rustling as it is rolled up",
+      "voice_text": null,
+      "start": 17.064,
+      "end": 17.914,
+      "start_anchor": "绢面呼啦收拢",
+      "end_anchor": null
+    }
+  ],
+  "wav_sha256": "b38a7316eb00f5062275685c72dccaddc0793342a93700e3d0cd0f70b413d8f3"
+}

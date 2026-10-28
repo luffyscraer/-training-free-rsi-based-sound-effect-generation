@@ -1,0 +1,82 @@
+{
+  "id": "EN04",
+  "language": "en",
+  "title": "The Storm-Damaged Shrine",
+  "subtitle": "A quiet rain bed & a sudden collapse",
+  "text": "Sheltering from rain in a mountain shrine, an old carpenter heard a faint crack from a roof beam and suspected that its joint had loosened. His footsteps thudded over damp bricks as he held up a flame to inspect the split. Rain pattered densely on the tiles, and a gust scattered ash from the incense burner across the floor. He hurriedly struck a small bronze bell to warn everyone out of the side hall. A moment later the rotten beam fell with a crash, but no one was hurt. He cordoned off the area and promised the shrine keeper that he would return to repair the roof when the weather cleared.",
+  "duration": 34.27,
+  "note": "The rain is intentionally restrained beneath narration. The gust is subtle and its exact identity remains uncertain; listen for the warning bell and collapse.",
+  "mix": "media/EN04-mix.mp3",
+  "narration": "media/EN04-narration.mp3",
+  "wav": "media/EN04.wav",
+  "plan": "data/plans/EN04.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "heard a faint crack from a roof beam",
+      "kind": "short",
+      "sound": "wooden roof beam cracking",
+      "voice_text": null,
+      "start": 3.232,
+      "end": 4.278,
+      "start_anchor": "heard a faint crack from a roof beam",
+      "end_anchor": null
+    },
+    {
+      "id": "e002",
+      "anchor": "footsteps thudded over damp bricks",
+      "kind": "process",
+      "sound": "footsteps thudding on damp bricks",
+      "voice_text": null,
+      "start": 8.056,
+      "end": 12.271,
+      "start_anchor": "footsteps thudded over damp bricks",
+      "end_anchor": "inspect the split"
+    },
+    {
+      "id": "e003",
+      "anchor": "Rain pattered densely on the tiles",
+      "kind": "bed",
+      "sound": "rain pattering densely on roof tiles",
+      "voice_text": null,
+      "start": 0.12,
+      "end": 33.77,
+      "start_anchor": "Sheltering from rain in a mountain shrine",
+      "end_anchor": null
+    },
+    {
+      "id": "e004",
+      "anchor": "a gust scattered ash from the incense burner across the floor",
+      "kind": "process",
+      "sound": "wind gust scattering ash across the floor",
+      "voice_text": null,
+      "start": 15.294,
+      "end": 18.157,
+      "start_anchor": "a gust scattered ash from the incense burner across the floor",
+      "end_anchor": "across the floor"
+    },
+    {
+      "id": "e005",
+      "anchor": "struck a small bronze bell",
+      "kind": "short",
+      "sound": "bronze bell being struck",
+      "voice_text": null,
+      "start": 19.191,
+      "end": 22.241,
+      "start_anchor": "struck a small bronze bell",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "the rotten beam fell with a crash",
+      "kind": "short",
+      "sound": "heavy wooden beam crashing to the ground",
+      "voice_text": null,
+      "start": 23.996,
+      "end": 26.546,
+      "start_anchor": "the rotten beam fell with a crash",
+      "end_anchor": null
+    }
+  ],
+  "wav_sha256": "b7703f42a1a793f4cdf391b87e4951ef3a60e01e4456e64b385132e6a2cabef1"
+}

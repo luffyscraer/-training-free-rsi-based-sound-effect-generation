@@ -1,0 +1,93 @@
+{
+  "id": "ZH03",
+  "language": "zh",
+  "title": "A Night at the Inn",
+  "subtitle": "寒夜客栈 · Fire, a falling lid & hurried steps",
+  "text": "寒夜客栈住进一队迷路镖师，灶娘桂婶听出后院有人偷翻米缸。她踩过灶前碎柴，咔嚓一声；柴火在锅底噼啪作响，木勺搅汤哗啦转圈。桂婶没有惊动客人，只把铜锅盖轻扣在后门，门一开便当啷坠地。小贼沿湿巷逃跑，脚步啪嗒急促，原来只是饿得发抖的邻村孩子。桂婶给他盛了粥，再请镖师送他回去。",
+  "duration": 28.044,
+  "note": "Rummaging uses hands-in-rice Foley. The texture suggests scraping and brushing, but does not uniquely identify a grain container.",
+  "mix": "media/ZH03-mix.mp3",
+  "narration": "media/ZH03-narration.mp3",
+  "wav": "media/ZH03.wav",
+  "plan": "data/plans/ZH03.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "听出后院有人偷翻米缸",
+      "kind": "process",
+      "sound": "hands rummaging inside a rice vat",
+      "voice_text": null,
+      "start": 3.333,
+      "end": 7.346,
+      "start_anchor": "听出后院有人偷翻米缸",
+      "end_anchor": "踩过灶前碎柴"
+    },
+    {
+      "id": "e002",
+      "anchor": "踩过灶前碎柴，咔嚓一声",
+      "kind": "short",
+      "sound": "footstep crushing dry firewood with a snap",
+      "voice_text": null,
+      "start": 8.057,
+      "end": 8.607,
+      "start_anchor": "；柴火在锅底",
+      "end_anchor": null
+    },
+    {
+      "id": "e003",
+      "anchor": "柴火在锅底噼啪作响",
+      "kind": "process",
+      "sound": "fire crackling under the pot",
+      "voice_text": null,
+      "start": 8.558,
+      "end": 15.954,
+      "start_anchor": "柴火在锅底噼啪作响",
+      "end_anchor": "只把铜锅盖轻扣在后门"
+    },
+    {
+      "id": "e004",
+      "anchor": "木勺搅汤哗啦转圈",
+      "kind": "process",
+      "sound": "wooden spoon stirring soup with splashing sounds",
+      "voice_text": null,
+      "start": 10.679,
+      "end": 12.351,
+      "start_anchor": "木勺搅汤哗啦转圈",
+      "end_anchor": "木勺搅汤哗啦转圈"
+    },
+    {
+      "id": "e005",
+      "anchor": "铜锅盖轻扣在后门",
+      "kind": "short",
+      "sound": "copper pot lid being propped against a door",
+      "voice_text": null,
+      "start": 14.202,
+      "end": 14.652,
+      "start_anchor": "只把铜锅盖轻扣在后门",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "门一开便当啷坠地",
+      "kind": "short",
+      "sound": "copper lid clattering onto the ground",
+      "voice_text": null,
+      "start": 16.635,
+      "end": 17.835,
+      "start_anchor": "门一开便当啷坠地",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "沿湿巷逃跑，脚步啪嗒急促",
+      "kind": "process",
+      "sound": "rapid footsteps slapping on wet alley ground",
+      "voice_text": null,
+      "start": 18.686,
+      "end": 24.441,
+      "start_anchor": "小贼沿湿巷逃跑，脚步啪嗒急促",
+      "end_anchor": "原来只是饿得发抖的邻村孩子"
+    }
+  ],
+  "wav_sha256": "cb764c16d4d87f8527b46f9e4ef53771cc5403cbd3fba3d08c8168f55d52493b"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "EN01",
+  "language": "en",
+  "title": "The Sluice Keeper",
+  "subtitle": "Metal impacts against moving water",
+  "text": "A county painter came to redraw the old sluice gate, but found that someone had quietly replaced its measuring ruler. At dawn he climbed mossy steps, his wooden clogs tapping the stone, while water ran steadily through the sluice tunnel. He tapped the ruler with a small hammer: the old wood sounded dull, but the new wood answered with a hollow knock. He pulled a hidden nail, and an iron plate clanged into a basin. Outside, the gatekeeper rang the departure bell. The painter held up the faulty ruler; the boatmen stopped rowing, leaving only small waves lapping the bank. The gate was sealed before it could be opened by mistake.",
+  "duration": 36.619,
+  "note": "The plate impact and nail strike are separate events. Event locations use the executed timeline rather than approximate timestamps from listening reports.",
+  "mix": "media/EN01-mix.mp3",
+  "narration": "media/EN01-narration.mp3",
+  "wav": "media/EN01.wav",
+  "plan": "data/plans/EN01.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "climbed mossy steps, his wooden clogs tapping the stone",
+      "kind": "process",
+      "sound": "wooden clogs tapping on stone steps",
+      "voice_text": null,
+      "start": 7.154,
+      "end": 10.696,
+      "start_anchor": "climbed mossy steps, his wooden clogs tapping the stone",
+      "end_anchor": "tapping the stone"
+    },
+    {
+      "id": "e002",
+      "anchor": "water ran steadily through the sluice tunnel",
+      "kind": "bed",
+      "sound": "water flowing steadily through a sluice tunnel",
+      "voice_text": null,
+      "start": 11.579,
+      "end": 32.945,
+      "start_anchor": "water ran steadily through the sluice tunnel",
+      "end_anchor": "leaving only small waves lapping the bank"
+    },
+    {
+      "id": "e003",
+      "anchor": "tapped the ruler with a small hammer: the old wood sounded dull",
+      "kind": "short",
+      "sound": "dull tap of a small hammer on old wood",
+      "voice_text": null,
+      "start": 13.837,
+      "end": 14.158,
+      "start_anchor": "tapped the ruler with a small hammer: the old wood sounded dull",
+      "end_anchor": null
+    },
+    {
+      "id": "e004",
+      "anchor": "the new wood answered with a hollow knock",
+      "kind": "short",
+      "sound": "hollow knock of a small hammer on new wood",
+      "voice_text": null,
+      "start": 17.789,
+      "end": 18.268,
+      "start_anchor": "the new wood answered with a hollow knock",
+      "end_anchor": null
+    },
+    {
+      "id": "e005",
+      "anchor": "pulled a hidden nail",
+      "kind": "short",
+      "sound": "nail being pulled out of wood",
+      "voice_text": null,
+      "start": 20.187,
+      "end": 20.687,
+      "start_anchor": "pulled a hidden nail",
+      "end_anchor": null
+    },
+    {
+      "id": "e006",
+      "anchor": "an iron plate clanged into a basin",
+      "kind": "short",
+      "sound": "iron plate clanging into a metal basin",
+      "voice_text": null,
+      "start": 21.907,
+      "end": 23.457,
+      "start_anchor": "an iron plate clanged into a basin",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "the gatekeeper rang the departure bell",
+      "kind": "short",
+      "sound": "large bell ringing",
+      "voice_text": null,
+      "start": 24.962,
+      "end": 28.012,
+      "start_anchor": "the gatekeeper rang the departure bell",
+      "end_anchor": null
+    },
+    {
+      "id": "e008",
+      "anchor": "the boatmen stopped rowing, leaving only small waves lapping the bank",
+      "kind": "process",
+      "sound": "small water waves lapping against the riverbank",
+      "voice_text": null,
+      "start": 31.067,
+      "end": 35.878,
+      "start_anchor": "leaving only small waves lapping the bank",
+      "end_anchor": "The gate was sealed before it could be opened by mistake."
+    }
+  ],
+  "wav_sha256": "f647e7cd8f70ce9a756814301fd8aa653d3e1fe96d56066823ae56cbf9d0f230"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "EN03",
+  "language": "en",
+  "title": "The Blacksmith’s Hairpin",
+  "subtitle": "Wet steps, bellows & the forge",
+  "text": "A blacksmith's apprentice accidentally snapped a bride's hairpin, with barely enough time left before the wedding procession. Clutching its box, he ran down the stone street, his shoes splashing through muddy water. Inside the forge, the bellows pumped steadily and the fire crackled higher. His master told him to slow down. He straightened the ornament with small, ringing hammer taps, wound the silver wire back into place, and closed the pliers with a sharp click. Wedding drums drew nearer from the street. He polished the hairpin and returned it before the bridal sedan stopped at the door.",
+  "duration": 35.063,
+  "note": "Bellows are supported by mixed-window listening evidence. Some small texture identities remain uncertain beneath the other foreground sounds.",
+  "mix": "media/EN03-mix.mp3",
+  "narration": "media/EN03-narration.mp3",
+  "wav": "media/EN03.wav",
+  "plan": "data/plans/EN03.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "snapped a bride's hairpin",
+      "kind": "short",
+      "sound": "hairpin snapping",
+      "voice_text": null,
+      "start": 2.192,
+      "end": 2.542,
+      "start_anchor": "snapped a bride's hairpin",
+      "end_anchor": null
+    },
+    {
+      "id": "e002",
+      "anchor": "ran down the stone street, his shoes splashing through muddy water",
+      "kind": "process",
+      "sound": "running footsteps splashing through muddy water on stone",
+      "voice_text": null,
+      "start": 8.259,
+      "end": 11.576,
+      "start_anchor": "ran down the stone street, his shoes splashing through muddy water",
+      "end_anchor": "his shoes splashing through muddy water"
+    },
+    {
+      "id": "e003",
+      "anchor": "the bellows pumped steadily",
+      "kind": "process",
+      "sound": "bellows pumping steadily",
+      "voice_text": null,
+      "start": 13.439,
+      "end": 26.819,
+      "start_anchor": "the bellows pumped steadily",
+      "end_anchor": "closed the pliers with a sharp click"
+    },
+    {
+      "id": "e004",
+      "anchor": "the fire crackled higher",
+      "kind": "process",
+      "sound": "fire crackling",
+      "voice_text": null,
+      "start": 15.233,
+      "end": 26.819,
+      "start_anchor": "the fire crackled higher",
+      "end_anchor": "closed the pliers with a sharp click"
+    },
+    {
+      "id": "e005",
+      "anchor": "small, ringing hammer taps",
+      "kind": "process",
+      "sound": "small ringing hammer taps on metal",
+      "voice_text": null,
+      "start": 19.489,
+      "end": 22.347,
+      "start_anchor": "He straightened the ornament with small, ringing hammer taps",
+      "end_anchor": "small, ringing hammer taps"
+    },
+    {
+      "id": "e006",
+      "anchor": "closed the pliers with a sharp click",
+      "kind": "short",
+      "sound": "pliers closing with a sharp click",
+      "voice_text": null,
+      "start": 25.144,
+      "end": 25.394,
+      "start_anchor": "closed the pliers with a sharp click",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "Wedding drums drew nearer from the street",
+      "kind": "process",
+      "sound": "wedding drums beating and drawing nearer",
+      "voice_text": null,
+      "start": 27.13,
+      "end": 34.163,
+      "start_anchor": "Wedding drums drew nearer from the street",
+      "end_anchor": "before the bridal sedan stopped at the door"
+    }
+  ],
+  "wav_sha256": "fb5e31f3c3411803a85383db7180fe4fdc4c9344859561fbb7ed5d28610d7174"
+}

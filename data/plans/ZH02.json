@@ -1,0 +1,104 @@
+{
+  "id": "ZH02",
+  "language": "zh",
+  "title": "The Printing House",
+  "subtitle": "印坊 · A press, scattered paper & a warning",
+  "text": "印坊赶制赈灾告示，学徒小泉却听见压版机每转一圈都发出异样的嘎哒声。他沿长桌走过去，木地板咚咚回响，掀起纸堆时纸页哗啦散开。砚台被人推落，啪地碎成两半，他在碎片下找到调换的铜字。院里驴车铃声已响，押运人催着发车。小泉喊停师傅，用木槌逐字敲回正确版面，滚筒重新吱呀转起时，百姓看见的才是真正的放粮日期。",
+  "duration": 30.496,
+  "note": "The added warning voice is brief; its separation from the narrator remains limited. The press can compete slightly with narration.",
+  "mix": "media/ZH02-mix.mp3",
+  "narration": "media/ZH02-narration.mp3",
+  "wav": "media/ZH02.wav",
+  "plan": "data/plans/ZH02.json",
+  "events": [
+    {
+      "id": "e001",
+      "anchor": "压版机每转一圈都发出异样的嘎哒声",
+      "kind": "process",
+      "sound": "printing press turning with rhythmic clicking",
+      "voice_text": null,
+      "start": 3.242,
+      "end": 22.397,
+      "start_anchor": "压版机每转一圈都发出异样的嘎哒声",
+      "end_anchor": "小泉喊停师傅"
+    },
+    {
+      "id": "e002",
+      "anchor": "沿长桌走过去，木地板咚咚回响",
+      "kind": "process",
+      "sound": "footsteps thumping on wooden floorboards",
+      "voice_text": null,
+      "start": 6.395,
+      "end": 9.167,
+      "start_anchor": "沿长桌走过去",
+      "end_anchor": "木地板咚咚回响"
+    },
+    {
+      "id": "e003",
+      "anchor": "掀起纸堆时纸页哗啦散开",
+      "kind": "process",
+      "sound": "paper sheets rustling and scattering",
+      "voice_text": null,
+      "start": 9.597,
+      "end": 11.529,
+      "start_anchor": "掀起纸堆时",
+      "end_anchor": "纸页哗啦散开"
+    },
+    {
+      "id": "e004",
+      "anchor": "砚台被人推落，啪地碎成两半",
+      "kind": "short",
+      "sound": "inkstone smashing on the ground",
+      "voice_text": null,
+      "start": 12.116,
+      "end": 13.666,
+      "start_anchor": "啪地碎成两半",
+      "end_anchor": null
+    },
+    {
+      "id": "e005",
+      "anchor": "院里驴车铃声已响",
+      "kind": "process",
+      "sound": "donkey cart bells jingling",
+      "voice_text": null,
+      "start": 17.243,
+      "end": 20.175,
+      "start_anchor": "院里驴车铃声已响",
+      "end_anchor": "押运人催着发车"
+    },
+    {
+      "id": "e006",
+      "anchor": "小泉喊停师傅",
+      "kind": "voice",
+      "sound": "Voice: 停",
+      "voice_text": "停",
+      "start": 22.517,
+      "end": 22.912,
+      "start_anchor": "小泉喊停师傅",
+      "end_anchor": null
+    },
+    {
+      "id": "e007",
+      "anchor": "用木槌逐字敲回正确版面",
+      "kind": "process",
+      "sound": "wooden mallet tapping metal type blocks repeatedly",
+      "voice_text": null,
+      "start": 23.002,
+      "end": 24.533,
+      "start_anchor": "用木槌逐字敲回正确版面",
+      "end_anchor": "敲回正确版面"
+    },
+    {
+      "id": "e008",
+      "anchor": "滚筒重新吱呀转起时",
+      "kind": "process",
+      "sound": "roller creaking as it turns",
+      "voice_text": null,
+      "start": 24.983,
+      "end": 29.996,
+      "start_anchor": "滚筒重新吱呀转起时",
+      "end_anchor": "才是真正的放粮日期"
+    }
+  ],
+  "wav_sha256": "cebc6d46c74a726bf150295621159cba313c178ba77ce6086d6daa80342938bc"
+}
