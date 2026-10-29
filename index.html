@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#f8f7f3">
   <title>Training-free RSI-based Sound Effect Generation</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js?v=20261028-clean" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261029-comparison">
+  <script src="app.js?v=20261029-planning-comparison" defer></script>
 </head>
 <body>
   <a class="skip" href="#demos">Skip to audio demos</a>
@@ -28,6 +28,7 @@
       <div class="demo-toolbar"><div class="filters" role="group" aria-label="Filter demos by language"><button type="button" data-filter="all" aria-pressed="true">All excerpts</button><button type="button" data-filter="zh" aria-pressed="false">中文</button><button type="button" data-filter="en" aria-pressed="false">English</button></div><span id="result-count" role="status" aria-live="polite">Loading excerpts…</span></div>
       <p class="guide">Compare the <strong>sound design</strong> with <strong>narration only</strong>, matched to the same timing. Open an event plan to jump to a sound. The narration reference is not an RSI ablation.</p>
       <p class="guide">Effects were compared across MMAudio, AudioX, and FoleySet candidates using Qwen Omni listening reports, followed by evidence review and local repairs. Track times show actual rendered placement; downloadable plans also include intended audible-onset targets where available.</p>
+      <div class="comparison-note"><strong>New: local Qwen3.5-9B planning alongside the cloud demo.</strong><p>Each new case received five text-review responses (including invalid replies). Text planning and review: Qwen3.5-9B. Configured listening service: Qwen2.5-Omni-7B (local, 4-bit); no final listening review or new audio was produced in this planning-only run. None of the ten plans reached acceptance. The older audio is not a rendering of these new plans.</p><p>The new run used a modified production prompt, not the frozen P/Q-optimized prompts. ZH01 and ZH03 include a supplemental fifth review with an updated reviewer prompt. New time ranges are compiled targets on the input narration timeline; older mixes may contain inserted pauses. This is not a controlled model or prompt comparison.</p><a href="data/planning-comparison.json" download>Download new plans, model labels and counting details</a></div>
       <div id="demo-list"></div>
       <noscript><p>This page needs JavaScript to display the audio collection. You can <a href="data/cases.json">download the event index</a> or browse the <a href="media/">audio directory</a>.</p></noscript>
     </section>

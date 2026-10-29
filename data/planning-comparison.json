@@ -1,0 +1,1092 @@
+{
+  "revision": "ten_case_types_20261028",
+  "previous_revision": "final_review_v8",
+  "previous_models": {
+    "planner": "qwen3.8-max",
+    "text_eval": "qwen3.8-max",
+    "listener": "qwen3.8-omni-flash",
+    "assistance": "Iterative repairs and Codex-assisted evidence review; not unassisted first-pass outputs."
+  },
+  "models": {
+    "planner": "Qwen3.5-9B",
+    "text_eval": "Qwen3.5-9B",
+    "listener": "Qwen2.5-Omni-7B",
+    "listener_status": "Configured local NF4/4-bit service; no final mixed-audio review in this planning-only run."
+  },
+  "text_eval_limit_per_case": 5,
+  "text_eval_responses": 50,
+  "model_passed": 0,
+  "audio_generated": false,
+  "main_run_seconds": 2242.9765985012054,
+  "counting_note": "Five returned text-review answers per case, including malformed replies; not five successful repairs. ZH01/ZH03 include a supplemental fifth review with an updated reviewer prompt and no new plan generation. Main runtime excludes these supplemental reviews.",
+  "timeline_note": "New times are compiled targets on the input narration timeline, not rendered or perceptually measured onsets. They must not be used to seek the older mix, which can contain inserted pauses.",
+  "comparison_note": "Different models, prompts and repair histories: a qualitative comparison, not a controlled model benchmark.",
+  "cases": [
+    {
+      "id": "ZH04",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "山祠外雷声滚过",
+          "kind": "process",
+          "sound": "rolling thunder",
+          "voice_text": null,
+          "start": 0.6,
+          "end": 1.58,
+          "start_anchor": "雷声滚过",
+          "end_anchor": "滚过"
+        },
+        {
+          "id": "e002",
+          "anchor": "采药人叶青扶着受伤的樵夫避进殿里",
+          "kind": "process",
+          "sound": "muddy footsteps",
+          "voice_text": null,
+          "start": 3.081,
+          "end": 4.882,
+          "start_anchor": "扶着受伤的樵夫避进殿里",
+          "end_anchor": "避进殿里"
+        },
+        {
+          "id": "e003",
+          "anchor": "漏雨从瓦缝滴进陶钵",
+          "kind": "bed",
+          "sound": "rain dripping into bowl",
+          "voice_text": null,
+          "start": 8.763,
+          "end": 27.648617,
+          "start_anchor": "滴进陶钵",
+          "end_anchor": "滴进陶钵"
+        },
+        {
+          "id": "e004",
+          "anchor": "她掀开旧帘",
+          "kind": "process",
+          "sound": "cloth rustling with dust",
+          "voice_text": null,
+          "start": 11.644,
+          "end": 14.204,
+          "start_anchor": "掀开旧帘",
+          "end_anchor": "抖出积尘"
+        },
+        {
+          "id": "e005",
+          "anchor": "祠后忽然传来鹿的短鸣",
+          "kind": "short",
+          "sound": "deer short call",
+          "voice_text": null,
+          "start": 16.085,
+          "end": 16.885,
+          "start_anchor": "鹿的短鸣",
+          "end_anchor": "鹿的短鸣"
+        },
+        {
+          "id": "e006",
+          "anchor": "木桶碰井沿",
+          "kind": "short",
+          "sound": "wooden bucket hitting well rim",
+          "voice_text": null,
+          "start": 19.646,
+          "end": 20.046,
+          "start_anchor": "木桶碰井沿",
+          "end_anchor": "木桶碰井沿"
+        },
+        {
+          "id": "e007",
+          "anchor": "驮队铜铃靠近",
+          "kind": "process",
+          "sound": "tolling bells approaching",
+          "voice_text": null,
+          "start": 24.728,
+          "end": 25.568,
+          "start_anchor": "铜铃靠近",
+          "end_anchor": "靠近"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "EN04",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "heard a faint crack from a roof beam",
+          "kind": "short",
+          "sound": "wood beam crack",
+          "voice_text": null,
+          "start": 3.583,
+          "end": 4.383,
+          "start_anchor": "faint crack from a roof beam",
+          "end_anchor": "faint crack from a roof beam"
+        },
+        {
+          "id": "e002",
+          "anchor": "footsteps thudded over damp bricks",
+          "kind": "process",
+          "sound": "heavy footsteps on wet bricks",
+          "voice_text": null,
+          "start": 8.106,
+          "end": 22.779,
+          "start_anchor": "footsteps thudded over damp bricks",
+          "end_anchor": "He hurriedly struck a small bronze bell to warn everyone out of the side hall."
+        },
+        {
+          "id": "e003",
+          "anchor": "Rain pattered densely on the tiles",
+          "kind": "bed",
+          "sound": "dense rain pattering on tiles",
+          "voice_text": null,
+          "start": 12.751,
+          "end": 33.769705,
+          "start_anchor": "Rain pattered densely on the tiles",
+          "end_anchor": "Rain pattered densely on the tiles"
+        },
+        {
+          "id": "e004",
+          "anchor": "a gust scattered ash from the incense burner across the floor",
+          "kind": "short",
+          "sound": "ash scattering impact",
+          "voice_text": null,
+          "start": 16.215,
+          "end": 16.815,
+          "start_anchor": "ash from the incense burner across the floor",
+          "end_anchor": "ash from the incense burner across the floor"
+        },
+        {
+          "id": "e005",
+          "anchor": "struck a small bronze bell",
+          "kind": "short",
+          "sound": "bronze bell strike",
+          "voice_text": null,
+          "start": 19.663,
+          "end": 20.863,
+          "start_anchor": "small bronze bell",
+          "end_anchor": "small bronze bell"
+        },
+        {
+          "id": "e006",
+          "anchor": "the rotten beam fell with a crash",
+          "kind": "short",
+          "sound": "rotten beam crash",
+          "voice_text": null,
+          "start": 24.87,
+          "end": 26.37,
+          "start_anchor": "fell with a crash",
+          "end_anchor": "fell with a crash"
+        },
+        {
+          "id": "e007",
+          "anchor": "but no one was hurt",
+          "kind": "voice",
+          "sound": "Voice: collective gasp",
+          "voice_text": "collective gasp",
+          "start": 27.002,
+          "end": 28.002,
+          "start_anchor": "hurt",
+          "end_anchor": "hurt"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "ZH05",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
+          "kind": "process",
+          "sound": "running footsteps on stone steps with heel tapping",
+          "voice_text": null,
+          "start": 3.002,
+          "end": 4.824,
+          "start_anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
+          "end_anchor": "跑过石阶"
+        },
+        {
+          "id": "e002",
+          "anchor": "风撞开木窗",
+          "kind": "short",
+          "sound": "wooden window slamming open",
+          "voice_text": null,
+          "start": 6.585,
+          "end": 7.585,
+          "start_anchor": "风撞开木窗",
+          "end_anchor": "风撞开木窗"
+        },
+        {
+          "id": "e003",
+          "anchor": "窗扇砰地拍墙",
+          "kind": "short",
+          "sound": "wooden window hitting wall",
+          "voice_text": null,
+          "start": 7.686,
+          "end": 8.086,
+          "start_anchor": "窗扇砰地拍墙",
+          "end_anchor": "窗扇砰地拍墙"
+        },
+        {
+          "id": "e004",
+          "anchor": "雨水沙沙扫过纸屏",
+          "kind": "bed",
+          "sound": "rain rustling against paper screen",
+          "voice_text": null,
+          "start": 9.208,
+          "end": 26.301859,
+          "start_anchor": "雨水沙沙扫过纸屏",
+          "end_anchor": "雨水沙沙扫过纸屏"
+        },
+        {
+          "id": "e005",
+          "anchor": "铜镇纸叮地落案",
+          "kind": "short",
+          "sound": "brass paperweight hitting table",
+          "voice_text": null,
+          "start": 13.912,
+          "end": 14.212,
+          "start_anchor": "铜镇纸叮地落案",
+          "end_anchor": "铜镇纸叮地落案"
+        },
+        {
+          "id": "e006",
+          "anchor": "绢面呼啦收拢",
+          "kind": "short",
+          "sound": "canvas rolling up",
+          "voice_text": null,
+          "start": 17.114,
+          "end": 17.714,
+          "start_anchor": "绢面呼啦收拢",
+          "end_anchor": "绢面呼啦收拢"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "EN02",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "She tapped the copper plate lightly on the desk",
+          "kind": "short",
+          "sound": "copper plate tap",
+          "voice_text": null,
+          "start": 5.92,
+          "end": 6.72,
+          "start_anchor": "She tapped the copper plate lightly on the desk",
+          "end_anchor": "She tapped the copper plate lightly on the desk"
+        },
+        {
+          "id": "e002",
+          "anchor": "a bright ding revealed a thin thread in its seam",
+          "kind": "short",
+          "sound": "copper plate ding",
+          "voice_text": null,
+          "start": 8.286,
+          "end": 8.886,
+          "start_anchor": "a bright ding revealed a thin thread in its seam",
+          "end_anchor": "a bright ding revealed a thin thread in its seam"
+        },
+        {
+          "id": "e003",
+          "anchor": "Night rain rustled across the roof tiles outside",
+          "kind": "bed",
+          "sound": "rain rustling on tiles",
+          "voice_text": null,
+          "start": 11.093,
+          "end": 36.269751,
+          "start_anchor": "Night rain rustled across the roof tiles outside",
+          "end_anchor": "Night rain rustled across the roof tiles outside"
+        },
+        {
+          "id": "e004",
+          "anchor": "Someone fled through puddles by the back door",
+          "kind": "process",
+          "sound": "wet footsteps splashing",
+          "voice_text": null,
+          "start": 14.4,
+          "end": 16.588,
+          "start_anchor": "Someone fled through puddles by the back door",
+          "end_anchor": "Someone fled through puddles by the back door"
+        },
+        {
+          "id": "e005",
+          "anchor": "wet footsteps fading away",
+          "kind": "process",
+          "sound": "footsteps fading",
+          "voice_text": null,
+          "start": 16.889,
+          "end": 18.273,
+          "start_anchor": "wet footsteps fading away",
+          "end_anchor": "wet footsteps fading away"
+        },
+        {
+          "id": "e006",
+          "anchor": "the wooden latch rattled against the frame",
+          "kind": "short",
+          "sound": "wooden latch rattle",
+          "voice_text": null,
+          "start": 18.895,
+          "end": 19.395,
+          "start_anchor": "the wooden latch rattled against the frame",
+          "end_anchor": "the wooden latch rattled against the frame"
+        },
+        {
+          "id": "e007",
+          "anchor": "she heard the candyman striking his small copper gong",
+          "kind": "process",
+          "sound": "copper gong striking",
+          "voice_text": null,
+          "start": 22.124,
+          "end": 24.489,
+          "start_anchor": "she heard the candyman striking his small copper gong",
+          "end_anchor": "she heard the candyman striking his small copper gong"
+        },
+        {
+          "id": "e008",
+          "anchor": "asked him to stop the fugitive",
+          "kind": "short",
+          "sound": "gong striking ceasing",
+          "voice_text": null,
+          "start": 25.05,
+          "end": 25.45,
+          "start_anchor": "asked him to stop the fugitive",
+          "end_anchor": "asked him to stop the fugitive"
+        },
+        {
+          "id": "e009",
+          "anchor": "She tore open the recovered paper packet with a rustle",
+          "kind": "short",
+          "sound": "paper packet tearing",
+          "voice_text": null,
+          "start": 26.793,
+          "end": 27.493,
+          "start_anchor": "She tore open the recovered paper packet with a rustle",
+          "end_anchor": "She tore open the recovered paper packet with a rustle"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "ZH01",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "暴雨将至，守闸的顾七发现上游水位突然涨过红线",
+          "kind": "bed",
+          "sound": "heavy rain approaching and rising water level",
+          "voice_text": null,
+          "start": 3.262,
+          "end": 30.620771,
+          "start_anchor": "突然涨过红线",
+          "end_anchor": "突然涨过红线"
+        },
+        {
+          "id": "e002",
+          "anchor": "他踩着石阶跑进闸房",
+          "kind": "process",
+          "sound": "running footsteps on stone steps",
+          "voice_text": null,
+          "start": 4.863,
+          "end": 6.404,
+          "start_anchor": "他踩着石阶跑进闸房",
+          "end_anchor": "跑进闸房"
+        },
+        {
+          "id": "e003",
+          "anchor": "鞋底啪嗒作响",
+          "kind": "short",
+          "sound": "footstep impact on stone",
+          "voice_text": null,
+          "start": 7.125,
+          "end": 7.425,
+          "start_anchor": "鞋底啪嗒作响",
+          "end_anchor": "鞋底啪嗒作响"
+        },
+        {
+          "id": "e004",
+          "anchor": "檐角的雨珠滴进铜盆，叮叮连响",
+          "kind": "bed",
+          "sound": "raindrops hitting copper basin",
+          "voice_text": null,
+          "start": 8.566,
+          "end": 30.620771,
+          "start_anchor": "檐角的雨珠滴进铜盆，叮叮连响",
+          "end_anchor": "檐角的雨珠滴进铜盆，叮叮连响"
+        },
+        {
+          "id": "e005",
+          "anchor": "顾七拽动铁链",
+          "kind": "process",
+          "sound": "metal chain dragging and rattling",
+          "voice_text": null,
+          "start": 11.348,
+          "end": 15.931,
+          "start_anchor": "顾七拽动铁链",
+          "end_anchor": "只挪了一寸"
+        },
+        {
+          "id": "e006",
+          "anchor": "链环哗啦碰撞",
+          "kind": "short",
+          "sound": "metal chain links colliding",
+          "voice_text": null,
+          "start": 12.629,
+          "end": 13.029,
+          "start_anchor": "链环哗啦碰撞",
+          "end_anchor": "链环哗啦碰撞"
+        },
+        {
+          "id": "e007",
+          "anchor": "沉重闸板却只挪了一寸",
+          "kind": "short",
+          "sound": "heavy gate board scraping and shifting slightly",
+          "voice_text": null,
+          "start": 14.07,
+          "end": 14.57,
+          "start_anchor": "沉重闸板却只挪了一寸",
+          "end_anchor": "沉重闸板却只挪了一寸"
+        },
+        {
+          "id": "e008",
+          "anchor": "敲响岸边铜锣",
+          "kind": "short",
+          "sound": "copper gong being struck",
+          "voice_text": null,
+          "start": 18.252,
+          "end": 19.452,
+          "start_anchor": "敲响岸边铜锣",
+          "end_anchor": "敲响岸边铜锣"
+        },
+        {
+          "id": "e009",
+          "anchor": "村人推着木车沿堤赶来，车轮吱呀滚过碎石",
+          "kind": "process",
+          "sound": "wooden wheels rolling on gravel with squeaking",
+          "voice_text": null,
+          "start": 20.134,
+          "end": 30.620771,
+          "start_anchor": "村人推着木车沿堤赶来，车轮吱呀滚过碎石",
+          "end_anchor": "村人推着木车沿堤赶来，车轮吱呀滚过碎石"
+        },
+        {
+          "id": "e010",
+          "anchor": "众人合力清出卡住闸槽的断木",
+          "kind": "process",
+          "sound": "wooden logs being dragged and cleared",
+          "voice_text": null,
+          "start": 24.577,
+          "end": 30.620771,
+          "start_anchor": "众人合力清出卡住闸槽的断木",
+          "end_anchor": "众人合力清出卡住闸槽的断木"
+        },
+        {
+          "id": "e011",
+          "anchor": "水终于轰地冲向备用河道",
+          "kind": "short",
+          "sound": "torrential water rushing into channel",
+          "voice_text": null,
+          "start": 27.138,
+          "end": 28.638,
+          "start_anchor": "水终于轰地冲向备用河道",
+          "end_anchor": "水终于轰地冲向备用河道"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": true,
+      "retained_previous_executable": true
+    },
+    {
+      "id": "EN01",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "climbed mossy steps",
+          "kind": "process",
+          "sound": "footsteps on stone steps",
+          "voice_text": null,
+          "start": 7.204,
+          "end": 8.328,
+          "start_anchor": "climbed mossy steps",
+          "end_anchor": "climbed mossy steps"
+        },
+        {
+          "id": "e002",
+          "anchor": "his wooden clogs tapping the stone",
+          "kind": "process",
+          "sound": "wooden clogs tapping stone",
+          "voice_text": null,
+          "start": 8.95,
+          "end": 10.696,
+          "start_anchor": "his wooden clogs tapping the stone",
+          "end_anchor": "tapping the stone"
+        },
+        {
+          "id": "e003",
+          "anchor": "water ran steadily through the sluice tunnel",
+          "kind": "bed",
+          "sound": "steady water flow",
+          "voice_text": null,
+          "start": 11.579,
+          "end": 36.118821,
+          "start_anchor": "water ran steadily through the sluice tunnel",
+          "end_anchor": "water ran steadily through the sluice tunnel"
+        },
+        {
+          "id": "e004",
+          "anchor": "tapped the ruler with a small hammer",
+          "kind": "short",
+          "sound": "hammer tapping wood",
+          "voice_text": null,
+          "start": 13.887,
+          "end": 14.287,
+          "start_anchor": "tapped the ruler with a small hammer",
+          "end_anchor": "tapped the ruler with a small hammer"
+        },
+        {
+          "id": "e005",
+          "anchor": "old wood sounded dull",
+          "kind": "short",
+          "sound": "dull wood impact",
+          "voice_text": null,
+          "start": 16.254,
+          "end": 16.554,
+          "start_anchor": "old wood sounded dull",
+          "end_anchor": "old wood sounded dull"
+        },
+        {
+          "id": "e006",
+          "anchor": "new wood answered with a hollow knock",
+          "kind": "short",
+          "sound": "hollow wood impact",
+          "voice_text": null,
+          "start": 17.98,
+          "end": 18.28,
+          "start_anchor": "new wood answered with a hollow knock",
+          "end_anchor": "new wood answered with a hollow knock"
+        },
+        {
+          "id": "e007",
+          "anchor": "pulled a hidden nail",
+          "kind": "short",
+          "sound": "metal nail pulling",
+          "voice_text": null,
+          "start": 20.187,
+          "end": 20.687,
+          "start_anchor": "pulled a hidden nail",
+          "end_anchor": "pulled a hidden nail"
+        },
+        {
+          "id": "e008",
+          "anchor": "iron plate clanged into a basin",
+          "kind": "short",
+          "sound": "metal plate clanging into basin",
+          "voice_text": null,
+          "start": 22.219,
+          "end": 22.819,
+          "start_anchor": "iron plate clanged into a basin",
+          "end_anchor": "iron plate clanged into a basin"
+        },
+        {
+          "id": "e009",
+          "anchor": "gatekeeper rang the departure bell",
+          "kind": "short",
+          "sound": "bell ringing",
+          "voice_text": null,
+          "start": 25.474,
+          "end": 26.274,
+          "start_anchor": "gatekeeper rang the departure bell",
+          "end_anchor": "gatekeeper rang the departure bell"
+        },
+        {
+          "id": "e010",
+          "anchor": "boatmen stopped rowing",
+          "kind": "short",
+          "sound": "cessation of rowing rhythm",
+          "voice_text": null,
+          "start": 29.59,
+          "end": 29.89,
+          "start_anchor": "boatmen stopped rowing",
+          "end_anchor": "boatmen stopped rowing"
+        },
+        {
+          "id": "e011",
+          "anchor": "small waves lapping the bank",
+          "kind": "bed",
+          "sound": "waves lapping shore",
+          "voice_text": null,
+          "start": 31.699,
+          "end": 36.118821,
+          "start_anchor": "small waves lapping the bank",
+          "end_anchor": "small waves lapping the bank"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "ZH02",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "学徒小泉却听见压版机每转一圈都发出异样的嘎哒声",
+          "kind": "process",
+          "sound": "press machine irregular clacking",
+          "voice_text": null,
+          "start": 3.242,
+          "end": 5.724,
+          "start_anchor": "压版机每转一圈都发出异样的嘎哒声",
+          "end_anchor": "每转一圈都发出异样的嘎哒声"
+        },
+        {
+          "id": "e002",
+          "anchor": "他沿长桌走过去",
+          "kind": "process",
+          "sound": "walking footsteps on wood",
+          "voice_text": null,
+          "start": 6.285,
+          "end": 7.606,
+          "start_anchor": "他沿长桌走过去",
+          "end_anchor": "他沿长桌走过去"
+        },
+        {
+          "id": "e003",
+          "anchor": "木地板咚咚回响",
+          "kind": "bed",
+          "sound": "wood floor resonance",
+          "voice_text": null,
+          "start": 7.986,
+          "end": 9.167,
+          "start_anchor": "木地板咚咚回响",
+          "end_anchor": "木地板咚咚回响"
+        },
+        {
+          "id": "e004",
+          "anchor": "掀起纸堆时纸页哗啦散开",
+          "kind": "short",
+          "sound": "paper pages scattering",
+          "voice_text": null,
+          "start": 9.647,
+          "end": 11.147,
+          "start_anchor": "掀起纸堆时纸页哗啦散开",
+          "end_anchor": "掀起纸堆时纸页哗啦散开"
+        },
+        {
+          "id": "e005",
+          "anchor": "砚台被人推落",
+          "kind": "short",
+          "sound": "stone inkstone falling",
+          "voice_text": null,
+          "start": 11.769,
+          "end": 12.569,
+          "start_anchor": "砚台被人推落",
+          "end_anchor": "砚台被人推落"
+        },
+        {
+          "id": "e006",
+          "anchor": "啪地碎成两半",
+          "kind": "short",
+          "sound": "stone shattering",
+          "voice_text": null,
+          "start": 13.13,
+          "end": 13.53,
+          "start_anchor": "啪地碎成两半",
+          "end_anchor": "啪地碎成两半"
+        },
+        {
+          "id": "e007",
+          "anchor": "院里驴车铃声已响",
+          "kind": "process",
+          "sound": "donkey cart bell ringing",
+          "voice_text": null,
+          "start": 17.293,
+          "end": 18.974,
+          "start_anchor": "院里驴车铃声已响",
+          "end_anchor": "院里驴车铃声已响"
+        },
+        {
+          "id": "e008",
+          "anchor": "小泉喊停师傅",
+          "kind": "voice",
+          "sound": "Voice: 停",
+          "voice_text": "停",
+          "start": 21.036,
+          "end": 21.636,
+          "start_anchor": "小泉喊停师傅",
+          "end_anchor": "小泉喊停师傅"
+        },
+        {
+          "id": "e009",
+          "anchor": "用木槌逐字敲回正确版面",
+          "kind": "process",
+          "sound": "wooden mallet tapping characters",
+          "voice_text": null,
+          "start": 22.457,
+          "end": 23.938,
+          "start_anchor": "用木槌逐字敲回正确版面",
+          "end_anchor": "用木槌逐字敲回正确版面"
+        },
+        {
+          "id": "e010",
+          "anchor": "滚筒重新吱呀转起时",
+          "kind": "process",
+          "sound": "press roller creaking",
+          "voice_text": null,
+          "start": 24.438,
+          "end": 26.76,
+          "start_anchor": "滚筒重新吱呀转起时",
+          "end_anchor": "滚筒重新吱呀转起时"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 4,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "EN03",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "A blacksmith's apprentice accidentally snapped a bride's hairpin",
+          "kind": "short",
+          "sound": "hairpin snapping",
+          "voice_text": null,
+          "start": 2.242,
+          "end": 3.042,
+          "start_anchor": "snapped a bride's hairpin",
+          "end_anchor": "snapped a bride's hairpin"
+        },
+        {
+          "id": "e002",
+          "anchor": "he ran down the stone street",
+          "kind": "process",
+          "sound": "running footsteps on stone",
+          "voice_text": null,
+          "start": 8.309,
+          "end": 34.163,
+          "start_anchor": "ran down the stone street",
+          "end_anchor": "returned it before the bridal sedan stopped at the door"
+        },
+        {
+          "id": "e003",
+          "anchor": "his shoes splashing through muddy water",
+          "kind": "process",
+          "sound": "shoes splashing in mud",
+          "voice_text": null,
+          "start": 9.972,
+          "end": 34.163,
+          "start_anchor": "shoes splashing through muddy water",
+          "end_anchor": "returned it before the bridal sedan stopped at the door"
+        },
+        {
+          "id": "e004",
+          "anchor": "Inside the forge, the bellows pumped steadily",
+          "kind": "process",
+          "sound": "bellows pumping",
+          "voice_text": null,
+          "start": 13.559,
+          "end": 34.563084,
+          "start_anchor": "bellows pumped steadily",
+          "end_anchor": "bellows pumped steadily"
+        },
+        {
+          "id": "e005",
+          "anchor": "the fire crackled higher",
+          "kind": "bed",
+          "sound": "fire crackling",
+          "voice_text": null,
+          "start": 15.403,
+          "end": 34.563084,
+          "start_anchor": "fire crackled higher",
+          "end_anchor": "fire crackled higher"
+        },
+        {
+          "id": "e006",
+          "anchor": "His master told him to slow down",
+          "kind": "voice",
+          "sound": "Voice: slow down",
+          "voice_text": "slow down",
+          "start": 18.556,
+          "end": 21.056,
+          "start_anchor": "slow down",
+          "end_anchor": "slow down"
+        },
+        {
+          "id": "e007",
+          "anchor": "He straightened the ornament with small, ringing hammer taps",
+          "kind": "short",
+          "sound": "hammer tapping metal",
+          "voice_text": null,
+          "start": 21.344,
+          "end": 22.544,
+          "start_anchor": "ringing hammer taps",
+          "end_anchor": "ringing hammer taps"
+        },
+        {
+          "id": "e008",
+          "anchor": "wound the silver wire back into place",
+          "kind": "process",
+          "sound": "wire winding friction",
+          "voice_text": null,
+          "start": 23.871,
+          "end": 26.819,
+          "start_anchor": "back into place",
+          "end_anchor": "closed the pliers with a sharp click"
+        },
+        {
+          "id": "e009",
+          "anchor": "closed the pliers with a sharp click",
+          "kind": "short",
+          "sound": "pliers clicking shut",
+          "voice_text": null,
+          "start": 26.297,
+          "end": 26.597,
+          "start_anchor": "sharp click",
+          "end_anchor": "sharp click"
+        },
+        {
+          "id": "e010",
+          "anchor": "Wedding drums drew nearer from the street",
+          "kind": "process",
+          "sound": "drums approaching",
+          "voice_text": null,
+          "start": 27.501,
+          "end": 34.563084,
+          "start_anchor": "drums drew nearer from the street",
+          "end_anchor": "drums drew nearer from the street"
+        },
+        {
+          "id": "e011",
+          "anchor": "He polished the hairpin",
+          "kind": "process",
+          "sound": "polishing friction",
+          "voice_text": null,
+          "start": 30.514,
+          "end": 34.163,
+          "start_anchor": "polished the hairpin",
+          "end_anchor": "returned it before the bridal sedan stopped at the door"
+        },
+        {
+          "id": "e012",
+          "anchor": "the bridal sedan stopped at the door",
+          "kind": "short",
+          "sound": "sedan stopping",
+          "voice_text": null,
+          "start": 33.08,
+          "end": 33.68,
+          "start_anchor": "sedan stopped at the door",
+          "end_anchor": "sedan stopped at the door"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "ZH03",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "踩过灶前碎柴",
+          "kind": "process",
+          "sound": "crunching on broken wood",
+          "voice_text": null,
+          "start": 6.125,
+          "end": 7.346,
+          "start_anchor": "踩过灶前碎柴",
+          "end_anchor": "踩过灶前碎柴"
+        },
+        {
+          "id": "e002",
+          "anchor": "咔嚓一声",
+          "kind": "short",
+          "sound": "wood snapping",
+          "voice_text": null,
+          "start": 7.547,
+          "end": 7.947,
+          "start_anchor": "咔嚓一声",
+          "end_anchor": "咔嚓一声"
+        },
+        {
+          "id": "e003",
+          "anchor": "柴火在锅底噼啪作响",
+          "kind": "bed",
+          "sound": "wood crackling in fire",
+          "voice_text": null,
+          "start": 8.608,
+          "end": 27.544127,
+          "start_anchor": "柴火在锅底噼啪作响",
+          "end_anchor": "柴火在锅底噼啪作响"
+        },
+        {
+          "id": "e004",
+          "anchor": "木勺搅汤哗啦转圈",
+          "kind": "process",
+          "sound": "liquid splashing in bowl",
+          "voice_text": null,
+          "start": 10.729,
+          "end": 27.544127,
+          "start_anchor": "木勺搅汤哗啦转圈",
+          "end_anchor": "木勺搅汤哗啦转圈"
+        },
+        {
+          "id": "e005",
+          "anchor": "铜锅盖轻扣在后门",
+          "kind": "short",
+          "sound": "metal lid placement",
+          "voice_text": null,
+          "start": 14.453,
+          "end": 14.753,
+          "start_anchor": "铜锅盖轻扣在后门",
+          "end_anchor": "铜锅盖轻扣在后门"
+        },
+        {
+          "id": "e006",
+          "anchor": "门一开便当啷坠地",
+          "kind": "short",
+          "sound": "door slamming",
+          "voice_text": null,
+          "start": 16.635,
+          "end": 17.135,
+          "start_anchor": "门一开便当啷坠地",
+          "end_anchor": "门一开便当啷坠地"
+        },
+        {
+          "id": "e007",
+          "anchor": "脚步啪嗒急促",
+          "kind": "process",
+          "sound": "running footsteps on wet ground",
+          "voice_text": null,
+          "start": 20.518,
+          "end": 21.559,
+          "start_anchor": "脚步啪嗒急促",
+          "end_anchor": "脚步啪嗒急促"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": true,
+      "retained_previous_executable": false
+    },
+    {
+      "id": "EN05",
+      "events": [
+        {
+          "id": "e001",
+          "anchor": "he heard the low hum of the millstone spinning empty",
+          "kind": "process",
+          "sound": "low hum of grinding stone",
+          "voice_text": null,
+          "start": 7.513,
+          "end": 10.002,
+          "start_anchor": "the low hum of the millstone spinning empty",
+          "end_anchor": "spinning empty"
+        },
+        {
+          "id": "e002",
+          "anchor": "dry leaves rustling underfoot",
+          "kind": "process",
+          "sound": "rustling dry leaves",
+          "voice_text": null,
+          "start": 12.715,
+          "end": 14.705,
+          "start_anchor": "leaves rustling underfoot",
+          "end_anchor": "underfoot"
+        },
+        {
+          "id": "e003",
+          "anchor": "Wind slapped the back window against its frame",
+          "kind": "short",
+          "sound": "wind slapping window",
+          "voice_text": null,
+          "start": 15.065,
+          "end": 15.465,
+          "start_anchor": "Wind slapped the back window against its frame",
+          "end_anchor": "Wind slapped the back window against its frame"
+        },
+        {
+          "id": "e004",
+          "anchor": "wooden grain hopper rocked with a soft clunk",
+          "kind": "short",
+          "sound": "wooden hopper clunk",
+          "voice_text": null,
+          "start": 19.421,
+          "end": 19.721,
+          "start_anchor": "rocked with a soft clunk",
+          "end_anchor": "rocked with a soft clunk"
+        },
+        {
+          "id": "e005",
+          "anchor": "an iron ring rattled against a hidden door",
+          "kind": "short",
+          "sound": "iron ring rattling",
+          "voice_text": null,
+          "start": 23.108,
+          "end": 23.708,
+          "start_anchor": "ring rattled against a hidden door",
+          "end_anchor": "ring rattled against a hidden door"
+        },
+        {
+          "id": "e006",
+          "anchor": "He beat a wooden clapper",
+          "kind": "process",
+          "sound": "wooden clapper knocking",
+          "voice_text": null,
+          "start": 27.412,
+          "end": 29.655,
+          "start_anchor": "beat a wooden clapper",
+          "end_anchor": "to summon the bookkeeper"
+        }
+      ],
+      "text_eval_responses": 5,
+      "plan_versions": 5,
+      "model_passed": false,
+      "audio_generated": false,
+      "independent_acceptance": false,
+      "supplemental_fifth_review": false,
+      "retained_previous_executable": false
+    }
+  ]
+}
