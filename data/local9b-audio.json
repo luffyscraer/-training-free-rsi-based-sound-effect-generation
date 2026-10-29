@@ -1,0 +1,607 @@
+{
+  "revision": "ten_case_local9b_dualgen_20261028",
+  "planner": "Qwen3.5-9B",
+  "text_eval": "Qwen3.5-9B",
+  "listener": "Qwen2.5-Omni-7B (local, 4-bit)",
+  "note": "Earlier complete local-model mixes. Five is the text-review limit, not the actual count for every case. These are NOT renders of ten_case_types_20261028. Unaccepted candidates; some Omni replies say pass while also listing issues.",
+  "cases": [
+    {
+      "id": "ZH04",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 2,
+      "accepted": false,
+      "mix": "media/local9b/ZH04.mp3?v=561942ed2099e3b4",
+      "wav": "media/local9b/ZH04.wav?v=561942ed2099e3b4",
+      "sha256": "561942ed2099e3b4300d2fa6a3b58029b3285773c8ec212a3eb95a5210b90e95",
+      "omni_verdict": "revise",
+      "omni_issue_count": 7,
+      "events": [
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "山祠外雷声滚过",
+          "sound": "distant thunder rolling",
+          "start": 0.55,
+          "end": 27.648600000000002
+        },
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "漏雨从瓦缝滴进陶钵，嗒嗒不停",
+          "sound": "rain dripping into clay bowl",
+          "start": 10.053,
+          "end": 27.648600000000002
+        },
+        {
+          "id": "e007",
+          "kind": "process",
+          "anchor": "等山路上的驮队铜铃靠近",
+          "sound": "horse bells ringing approaching",
+          "start": 24.678,
+          "end": 27.648600000000002
+        },
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "草鞋在泥地上啪嗒作响",
+          "sound": "wet straw sandals stepping on mud",
+          "start": 6.352,
+          "end": 7.902
+        },
+        {
+          "id": "e004",
+          "kind": "process",
+          "anchor": "她掀开旧帘，布面哗啦抖出积尘",
+          "sound": "cloth rustling with dust",
+          "start": 13.064,
+          "end": 14.264
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "祠后忽然传来鹿的短鸣",
+          "sound": "deer short bleat",
+          "start": 16.295,
+          "end": 17.145000000000003
+        },
+        {
+          "id": "e006",
+          "kind": "short",
+          "anchor": "木桶碰井沿咚的一声",
+          "sound": "wooden bucket hitting stone well rim",
+          "start": 20.456,
+          "end": 21.105999999999998
+        }
+      ]
+    },
+    {
+      "id": "EN04",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 1,
+      "accepted": false,
+      "mix": "media/local9b/EN04.mp3?v=92d4128da0594265",
+      "wav": "media/local9b/EN04.wav?v=92d4128da0594265",
+      "sha256": "92d4128da0594265e78634767f087b5e44773b5e680929b6b2f15d4f320a71f7",
+      "omni_verdict": "pass",
+      "omni_issue_count": 3,
+      "events": [
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "Rain pattered densely on the tiles",
+          "sound": "heavy rain on tiles",
+          "start": 12.751,
+          "end": 33.7697
+        },
+        {
+          "id": "e001",
+          "kind": "short",
+          "anchor": "heard a faint crack from a roof beam",
+          "sound": "wood beam crack",
+          "start": 3.533,
+          "end": 4.383
+        },
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "footsteps thudded over damp bricks",
+          "sound": "heavy footsteps on wet bricks",
+          "start": 8.106,
+          "end": 10.606
+        },
+        {
+          "id": "e004",
+          "kind": "short",
+          "anchor": "a gust scattered ash from the incense burner",
+          "sound": "ash scattering on floor",
+          "start": 15.374,
+          "end": 15.974
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "struck a small bronze bell",
+          "sound": "bronze bell strike",
+          "start": 19.191,
+          "end": 19.641
+        },
+        {
+          "id": "e006",
+          "kind": "short",
+          "anchor": "the rotten beam fell with a crash",
+          "sound": "rotten beam crash",
+          "start": 24.589,
+          "end": 25.788999999999998
+        }
+      ]
+    },
+    {
+      "id": "ZH05",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 5,
+      "accepted": false,
+      "mix": "media/local9b/ZH05.mp3?v=cb166a6ebaeec002",
+      "wav": "media/local9b/ZH05.wav?v=cb166a6ebaeec002",
+      "sha256": "cb166a6ebaeec0022af524e18650bbce8b0cec4c6c2d72ee7af8e664f80b0428",
+      "omni_verdict": "revise",
+      "omni_issue_count": 2,
+      "events": [
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "风撞开木窗",
+          "sound": "wind forcing open wooden window",
+          "start": 6.535,
+          "end": 26.3019
+        },
+        {
+          "id": "e004",
+          "kind": "process",
+          "anchor": "雨水沙沙扫过纸屏",
+          "sound": "rain rustling on paper screen",
+          "start": 9.208,
+          "end": 26.301900000000003
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "两人卷起画布时，绢面呼啦收拢",
+          "sound": "silk fabric rustling and rolling up",
+          "start": 15.463,
+          "end": 26.3019
+        },
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "抱卷轴跑过石阶，鞋跟嗒嗒响",
+          "sound": "running footsteps with heel clicking on stone",
+          "start": 4.834,
+          "end": 7.3839999999999995
+        },
+        {
+          "id": "e003",
+          "kind": "short",
+          "anchor": "窗扇砰地拍墙",
+          "sound": "wooden window slams against wall",
+          "start": 7.636,
+          "end": 8.086
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "老人用铜镇纸叮地落案",
+          "sound": "brass paperweight hits table",
+          "start": 13.421,
+          "end": 13.770999999999999
+        }
+      ]
+    },
+    {
+      "id": "EN02",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 1,
+      "accepted": false,
+      "mix": "media/local9b/EN02.mp3?v=1bd71870f9b6bd3e",
+      "wav": "media/local9b/EN02.wav?v=1bd71870f9b6bd3e",
+      "sha256": "1bd71870f9b6bd3e48ca7a161660df112f65875ea0bcc8d9a96de3f4c7389a66",
+      "omni_verdict": "pass",
+      "omni_issue_count": 5,
+      "events": [
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "Night rain rustled across the roof tiles outside",
+          "sound": "rain rustling on tiles",
+          "start": 11.093,
+          "end": 36.269800000000004
+        },
+        {
+          "id": "e004",
+          "kind": "process",
+          "anchor": "Someone fled through puddles by the back door, wet footsteps fading away",
+          "sound": "wet footsteps splashing",
+          "start": 14.35,
+          "end": 36.2698
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "heard the candyman striking his small copper gong",
+          "sound": "copper gong strikes",
+          "start": 22.215,
+          "end": 25.751
+        },
+        {
+          "id": "e001",
+          "kind": "short",
+          "anchor": "tapped the copper plate lightly on the desk",
+          "sound": "copper plate tap on wood",
+          "start": 6.011,
+          "end": 6.461
+        },
+        {
+          "id": "e002",
+          "kind": "short",
+          "anchor": "a bright ding revealed a thin thread in its seam",
+          "sound": "metal ding",
+          "start": 8.0058,
+          "end": 8.3558
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "the wooden latch rattled against the frame",
+          "sound": "wooden latch rattle",
+          "start": 18.895,
+          "end": 19.395
+        },
+        {
+          "id": "e007",
+          "kind": "short",
+          "anchor": "She tore open the recovered paper packet with a rustle",
+          "sound": "paper tearing rustle",
+          "start": 26.793,
+          "end": 27.393
+        }
+      ]
+    },
+    {
+      "id": "ZH01",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 3,
+      "accepted": false,
+      "mix": "media/local9b/ZH01.mp3?v=fe2fa1bfc29ce310",
+      "wav": "media/local9b/ZH01.wav?v=fe2fa1bfc29ce310",
+      "sha256": "fe2fa1bfc29ce3103099bd9fb780ba245f5f262c7dfa144ebb689ab81781534f",
+      "omni_verdict": "pass",
+      "omni_issue_count": 5,
+      "events": [
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "檐角的雨珠滴进铜盆，叮叮连响",
+          "sound": "raindrops hitting copper basin",
+          "start": 8.566,
+          "end": 30.620800000000003
+        },
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "顾七拽动铁链，链环哗啦碰撞",
+          "sound": "metal chain dragging and rattling",
+          "start": 11.348,
+          "end": 15.931000000000001
+        },
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "他踩着石阶跑进闸房，鞋底啪嗒作响",
+          "sound": "running footsteps on stone steps",
+          "start": 4.813,
+          "end": 7.3629999999999995
+        },
+        {
+          "id": "e004",
+          "kind": "short",
+          "anchor": "他叫徒弟敲响岸边铜锣",
+          "sound": "copper gong being struck",
+          "start": 17.562,
+          "end": 19.112000000000002
+        },
+        {
+          "id": "e005",
+          "kind": "process",
+          "anchor": "村人推着木车沿堤赶来，车轮吱呀滚过碎石",
+          "sound": "wooden cart wheels rolling and squeaking over gravel",
+          "start": 20.084,
+          "end": 24.134
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "众人合力清出卡住闸槽的断木",
+          "sound": "wood being dragged and cleared from slot",
+          "start": 24.527,
+          "end": 28.077
+        },
+        {
+          "id": "e007",
+          "kind": "short",
+          "anchor": "水终于轰地冲向备用河道",
+          "sound": "torrential water rushing into channel",
+          "start": 27.138,
+          "end": 29.138
+        }
+      ]
+    },
+    {
+      "id": "EN01",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 2,
+      "accepted": false,
+      "mix": "media/local9b/EN01.mp3?v=2e0ac4b632f9242a",
+      "wav": "media/local9b/EN01.wav?v=2e0ac4b632f9242a",
+      "sha256": "2e0ac4b632f9242abc7684970cf45c22177c6c55356f4cdefebdc28b5941bbed",
+      "omni_verdict": "pass",
+      "omni_issue_count": 4,
+      "events": [
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "climbed mossy steps, his wooden clogs tapping the stone",
+          "sound": "wooden clogs tapping stone",
+          "start": 9.131,
+          "end": 30.715
+        },
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "water ran steadily through the sluice tunnel",
+          "sound": "steady water flow",
+          "start": 11.579,
+          "end": 36.1188
+        },
+        {
+          "id": "e007",
+          "kind": "process",
+          "anchor": "small waves lapping the bank",
+          "sound": "waves lapping shore",
+          "start": 31.649,
+          "end": 36.1188
+        },
+        {
+          "id": "e003",
+          "kind": "short",
+          "anchor": "tapped the ruler with a small hammer: the old wood sounded dull",
+          "sound": "hammer hitting dull wood",
+          "start": 13.837,
+          "end": 14.286999999999999
+        },
+        {
+          "id": "e004",
+          "kind": "short",
+          "anchor": "new wood answered with a hollow knock",
+          "sound": "hammer hitting hollow wood",
+          "start": 17.93,
+          "end": 18.28
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "pulled a hidden nail, and an iron plate clanged into a basin",
+          "sound": "metal clanging into basin",
+          "start": 20.137,
+          "end": 20.687
+        },
+        {
+          "id": "e006",
+          "kind": "short",
+          "anchor": "gatekeeper rang the departure bell",
+          "sound": "bell ringing",
+          "start": 25.424,
+          "end": 26.073999999999998
+        }
+      ]
+    },
+    {
+      "id": "ZH02",
+      "available": false,
+      "review_limit": 5,
+      "text_review_responses": 2,
+      "accepted": false,
+      "reason": "Mixing stopped because an event lacked a saved material-selection result; no replacement audio substituted."
+    },
+    {
+      "id": "EN03",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 1,
+      "accepted": false,
+      "mix": "media/local9b/EN03.mp3?v=1442a2b2b5c1fb8c",
+      "wav": "media/local9b/EN03.wav?v=1442a2b2b5c1fb8c",
+      "sha256": "1442a2b2b5c1fb8c0fda70a5c6cb8216c4ff1702a1ecf5eba3dad6d4f9a2cf57",
+      "omni_verdict": "revise",
+      "omni_issue_count": 6,
+      "events": [
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "ran down the stone street, his shoes splashing through muddy water",
+          "sound": "running footsteps on stone with splashing water",
+          "start": 8.259,
+          "end": 34.163
+        },
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "the bellows pumped steadily",
+          "sound": "bellows pumping",
+          "start": 13.439,
+          "end": 34.5631
+        },
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "the fire crackled higher",
+          "sound": "fire crackling",
+          "start": 15.233,
+          "end": 34.563100000000006
+        },
+        {
+          "id": "e004",
+          "kind": "process",
+          "anchor": "He straightened the ornament with small, ringing hammer taps",
+          "sound": "metal hammer tapping",
+          "start": 19.489,
+          "end": 26.819000000000003
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "Wedding drums drew nearer from the street",
+          "sound": "drums approaching",
+          "start": 27.13,
+          "end": 34.5631
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "closed the pliers with a sharp click",
+          "sound": "pliers clicking",
+          "start": 25.144,
+          "end": 25.343999999999998
+        }
+      ]
+    },
+    {
+      "id": "ZH03",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 2,
+      "accepted": false,
+      "mix": "media/local9b/ZH03.mp3?v=f9b85b972fbb7c61",
+      "wav": "media/local9b/ZH03.wav?v=f9b85b972fbb7c61",
+      "sha256": "f9b85b972fbb7c61bad6680e083a0833c63e2437f97e1c46b92604483d644adb",
+      "omni_verdict": "pass",
+      "omni_issue_count": 1,
+      "events": [
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "柴火在锅底噼啪作响",
+          "sound": "wood fire crackling",
+          "start": 9.338,
+          "end": 27.5441
+        },
+        {
+          "id": "e003",
+          "kind": "process",
+          "anchor": "木勺搅汤哗啦转圈",
+          "sound": "wood spoon stirring liquid with splashing",
+          "start": 10.679,
+          "end": 27.5441
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "小贼沿湿巷逃跑",
+          "sound": "running footsteps on wet ground",
+          "start": 19.407,
+          "end": 27.5441
+        },
+        {
+          "id": "e001",
+          "kind": "short",
+          "anchor": "踩过灶前碎柴",
+          "sound": "crunching dry wood",
+          "start": 6.676,
+          "end": 7.126
+        },
+        {
+          "id": "e004",
+          "kind": "short",
+          "anchor": "铜锅盖轻扣在后门",
+          "sound": "metal lid placement",
+          "start": 14.8928,
+          "end": 15.242799999999999
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "门一开便当啷坠地",
+          "sound": "metal lid hitting ground",
+          "start": 17.225,
+          "end": 17.775000000000002
+        }
+      ]
+    },
+    {
+      "id": "EN05",
+      "available": true,
+      "review_limit": 5,
+      "text_review_responses": 2,
+      "accepted": false,
+      "mix": "media/local9b/EN05.mp3?v=2a2bfa5069155985",
+      "wav": "media/local9b/EN05.wav?v=2a2bfa5069155985",
+      "sha256": "2a2bfa5069155985470dfe25a42dd7dc1d65e74c782061624d51d50aacd401a8",
+      "omni_verdict": "pass",
+      "omni_issue_count": 5,
+      "events": [
+        {
+          "id": "e001",
+          "kind": "process",
+          "anchor": "At night he heard the low hum of the millstone spinning empty",
+          "sound": "millstone low hum",
+          "start": 7.914,
+          "end": 37.6629
+        },
+        {
+          "id": "e002",
+          "kind": "process",
+          "anchor": "dry leaves rustling underfoot",
+          "sound": "leaves rustling",
+          "start": 12.353,
+          "end": 37.6629
+        },
+        {
+          "id": "e006",
+          "kind": "process",
+          "anchor": "He beat a wooden clapper to summon the bookkeeper, its knocks carrying toward the village entrance",
+          "sound": "wooden clapper knocking",
+          "start": 27.202,
+          "end": 37.6629
+        },
+        {
+          "id": "e003",
+          "kind": "short",
+          "anchor": "Wind slapped the back window against its frame",
+          "sound": "wind slapping window",
+          "start": 15.015,
+          "end": 16.265
+        },
+        {
+          "id": "e004",
+          "kind": "short",
+          "anchor": "wooden grain hopper rocked with a soft clunk",
+          "sound": "wooden hopper clunk",
+          "start": 19.913,
+          "end": 20.763
+        },
+        {
+          "id": "e005",
+          "kind": "short",
+          "anchor": "an iron ring rattled against a hidden door",
+          "sound": "iron ring rattling",
+          "start": 23.058,
+          "end": 24.108
+        }
+      ]
+    }
+  ]
+}

@@ -34,7 +34,18 @@ function planningPanel(c, comparison) {
   const link=el('a','plan-download','Download all 10 new plans (JSON)');link.href='data/planning-comparison.json';link.download='planning-comparison.json';section.append(link);
   return section;
 }
-function card(c, comparison) {
+function localAudioPanel(c, models) {
+  const section=el('section','audio-version');section.append(el('h4','','Qwen3.5-9B · Earlier complete candidate mix'),modelLabel(models));
+  section.append(el('p','status-note',`Not accepted · ${c.text_review_responses} text-review replies (limit: 5) · Earlier run, not the newer plan below`));
+  if(!c.available){section.append(el('p','review-note',c.reason));return section;}
+  const player=audioPlayer(c.mix,`${c.id} · LOCAL 9B FULL MIX · NOT ACCEPTED`);section.append(player.wrap);
+  const download=el('a','plan-download','Download complete candidate WAV');download.href=c.wav;download.download='';section.append(download);
+  section.append(el('p','review-note',`Omni verdict: ${c.omni_verdict}; reported issues: ${c.omni_issue_count}. A pass label with issues is not accepted.`));
+  const details=el('details'),summary=el('summary','',`${c.events.length} rendered events · click to listen`),panel=el('div');
+  for(const e of c.events){const row=el('button','planned-event');row.type='button';row.append(el('strong','',`${e.kind} · ${e.sound}`),el('span','',`${seconds(e.start)}–${seconds(e.end)} s`),el('small','',e.anchor));row.addEventListener('click',async()=>{try{player.audio.currentTime=e.start;await player.audio.play();}catch{player.message.textContent='Press play on the audio player.';player.message.hidden=false;}});panel.append(row);}
+  details.append(summary,panel);section.append(details);return section;
+}
+function card(c, comparison, localAudio) {
   const article = el('article','demo'); article.dataset.language = c.language; article.id = c.id;
   const head = el('div','demo-head'), title = el('div','demo-title'), titleCopy = el('div');
   const heading = el('h3','',c.title); heading.id = `title-${c.id}`; article.setAttribute('aria-labelledby',heading.id);
@@ -45,7 +56,8 @@ function card(c, comparison) {
   const column = el('div','players'); const mix = audioPlayer(c.mix,`${c.id} · PREVIOUS CLOUD DEMO · 2026-10-28`); const narration = audioPlayer(c.narration,`${c.id} · NARRATION ONLY`,true);
   const downloads = el('div','downloads'); for (const [label,path] of [['Download WAV',c.wav],['Event plan',c.plan]]) { const a = el('a','',label); a.href = path; a.download = ''; downloads.append(a); }
   const previous=el('section','audio-version');previous.append(el('h4','','Cloud models · Published audio'),modelLabel(comparison.previous_models),mix.wrap,narration.wrap,downloads,el('p','review-note',comparison.previous_models.assistance),el('p','review-note',`Review status: ${c.review_status}. ${c.note}`));
-  column.append(previous,planningPanel(comparison.cases.find(p=>p.id===c.id),comparison)); body.append(text,column);
+  const localColumn=el('div','local-versions');localColumn.append(localAudioPanel(localAudio.cases.find(p=>p.id===c.id),localAudio),planningPanel(comparison.cases.find(p=>p.id===c.id),comparison));
+  column.append(previous,localColumn); body.append(text,column);
   const details = el('details','event-details'), summary = el('summary','',`Explore ${c.events.length} sound events`); summary.append(el('span','','Text anchors & rendered timeline →'));
   const panel = el('div','event-panel'), legend = el('div','legend'); for (const [kind,color] of Object.entries(colors)) {const label = el('span','',kind); const dot = el('i'); dot.style.backgroundColor=color;label.prepend(dot);legend.append(label);}
   panel.append(legend);
@@ -67,7 +79,9 @@ async function init(){
     const response=await fetch('data/cases.json', {cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);
     const data=await response.json();
     const comparisonResponse=await fetch('data/planning-comparison.json',{cache:'no-store'});if(!comparisonResponse.ok)throw new Error(`HTTP ${comparisonResponse.status}`);
-    const comparison=await comparisonResponse.json();data.cases.forEach(c=>list.append(card(c,comparison)));count.textContent=`${data.cases.length} paired excerpts`;
+    const comparison=await comparisonResponse.json();
+    const localResponse=await fetch('data/local9b-audio.json',{cache:'no-store'});if(!localResponse.ok)throw new Error(`HTTP ${localResponse.status}`);
+    const localAudio=await localResponse.json();data.cases.forEach(c=>list.append(card(c,comparison,localAudio)));count.textContent=`${data.cases.length} paired excerpts`;
     document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
       const language=button.dataset.filter;let visible=0;
       document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));

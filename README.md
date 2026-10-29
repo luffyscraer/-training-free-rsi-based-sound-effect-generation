@@ -21,6 +21,8 @@ Alongside that audio, the 2026-10-29 update displays `ten_case_types_20261028`: 
 
 The new plan timestamps are compiled targets on the input narration, not verified audible onsets or positions in the old mix. ZH01/ZH03 received a supplemental fifth review with an updated reviewer prompt, without new planning. Invalid replies consume the five-response budget. This display is not a controlled model comparison. Re-export the whitelisted planning data with `python tools/export_planning_comparison.py /path/to/ten_case_types_20261028`.
 
+The page also includes nine existing complete local-9B mixes from `ten_case_local9b_dualgen_20261028`, exported without regeneration. Their own rendered timelines and actual text-review counts appear with the players. Local Qwen2.5-Omni-7B reviewed those mixes; none passed the combined acceptance criteria. ZH02 has no mix because an event lacked material selection. These audio files must not be described as renders of the newer planning-only run. Add `--existing-audio /path/to/ten_case_local9b_dualgen_20261028` to the export command to include them.
+
 1. Authenticate to GitHub locally using `gh auth login` (never put a token in page files).
 2. Create the public repository above, and push **only this directory** to its `main` branch. Do not upload the parent audiobook project or experiment directories.
 3. In the repository's Settings → Pages, set Build and deployment → Source to **GitHub Actions**.
